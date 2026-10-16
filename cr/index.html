@@ -91,12 +91,15 @@ html[data-layout="list"] .pref[data-pref="layout"] .opt[data-val="list"]{
 .hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--brand),var(--brand2),var(--accent));
   -webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p{color:var(--txt2);margin-top:10px;font-size:15px}
-.tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.tags{position:sticky;top:var(--sticky-top,70px);z-index:45;
+  display:flex;gap:8px;justify-content:center;flex-wrap:wrap;
+  margin:18px -20px 0;padding:10px 20px 12px;
+  background:var(--bg);border-bottom:1px solid var(--line)}
 .tag{padding:5px 13px;border-radius:20px;font-size:12px;border:1px solid var(--line);background:var(--card);color:var(--txt2);cursor:pointer;transition:.18s}
 .tag:hover{border-color:var(--brand);color:var(--txt);transform:translateY(-1px)}
 .tag.on{background:linear-gradient(90deg,var(--brand),var(--brand2));color:#fff;border-color:transparent}
 
-section{padding-top:34px;scroll-margin-top:80px}
+section{padding-top:34px;scroll-margin-top:calc(var(--sticky-top,70px) + var(--tags-h,52px) + 12px)}
 .sec-head{display:flex;align-items:center;gap:12px;margin-bottom:16px}
 .sec-head .ic{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;font-size:18px;
   background:var(--card);border:1px solid var(--line)}
@@ -176,8 +179,8 @@ footer p{margin:6px 0}
   <div class="hero">
     <h1>一站式 <em>资源导航</em><br>AI · 资讯 · 购物 · 求职 · 工具 · 线路 · 影视 · 游戏 · 网盘 · 学习 · 背单词 · 破解</h1>
     <p>把常用资源站收进一个页面，点开即走 · 无需联网、无追踪、无依赖</p>
-    <div class="tags" id="tags"></div>
   </div>
+  <div class="tags" id="tags"></div>
 
   <!-- AI 工具 -->
   <section id="cat-0" data-name="AI 工具导航">
@@ -531,6 +534,11 @@ footer p{margin:6px 0}
       <small>免费最新电影 / 追剧 / 安卓 App</small>
     </div>
     <div class="grid">
+      <a class="card" href="https://www.pejdw.com/app/shipin/" target="_blank" rel="noopener">
+        <div class="top"><div class="fav">下</div><h3>简单下载站 · 影音</h3></div>
+        <div class="desc">影音和短视频 App，安装包可直接下载。</div>
+        <div class="meta"><span>pejdw.com/app/shipin</span><span class="go">前往 →</span></div>
+      </a>
       <a class="card" href="https://appx64.com/tv" target="_blank" rel="noopener">
         <div class="top"><div class="fav">小</div><h3>小兵下载站 · 电视端</h3></div>
         <div class="desc">影视类 App 与电视端资源下载，涵盖影音播放、直播、追剧工具。</div>
@@ -931,6 +939,11 @@ footer p{margin:6px 0}
         <div class="desc">网络安全社区。</div>
         <div class="meta"><span>cyberarsenal.org</span><span class="go">前往 →</span></div>
       </a>
+      <a class="card" href="https://paper.seebug.org/" target="_blank" rel="noopener">
+        <div class="top"><div class="fav">纸</div><h3>Seebug Paper</h3></div>
+        <div class="desc">安全技术文章和漏洞分析。</div>
+        <div class="meta"><span>paper.seebug.org</span><span class="go">前往 →</span></div>
+      </a>
     </div>
   </section>
 
@@ -972,12 +985,34 @@ footer p{margin:6px 0}
   });
 
   var curTag = '';
+  var pageHeader = document.querySelector('header');
+  function syncStickyTop(){
+    document.documentElement.style.setProperty('--sticky-top', pageHeader.offsetHeight + 'px');
+    document.documentElement.style.setProperty('--tags-h', tags.offsetHeight + 'px');
+  }
+  syncStickyTop();
+  window.addEventListener('resize', syncStickyTop);
+  if(window.ResizeObserver) new ResizeObserver(syncStickyTop).observe(pageHeader);
+  function scrollToHead(el){
+    if(!el) return;
+    syncStickyTop();
+    var head = el.querySelector('.sec-head') || el;
+    var offset = pageHeader.offsetHeight + tags.offsetHeight + 12;
+    var y = head.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({top: Math.max(0, y), behavior:'smooth'});
+  }
   function filter(tag, tagEl){
     curTag = tag;
     Array.prototype.forEach.call(tags.children, function(x){x.classList.remove('on')});
     tagEl.classList.add('on');
     apply();
-    if(tag) window.scrollTo({top: 0, behavior:'smooth'});
+    var target = null;
+    sections.forEach(function(s){
+      if(target) return;
+      if(tag){ if(s.dataset.name === tag) target = s; }
+      else if(!s.classList.contains('hide')) target = s;
+    });
+    requestAnimationFrame(function(){ scrollToHead(target); });
   }
 
   function apply(){
