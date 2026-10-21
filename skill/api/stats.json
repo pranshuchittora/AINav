@@ -1,31 +1,21 @@
 {
-  "total": 341,
+  "total": 514,
   "labelCount": {
-    "AI Workflow": 5,
-    "AI Coding": 72,
-    "AI Agent": 25,
-    "RAG": 94,
-    "LLM Tools": 51,
-    "LangChain": 18,
-    "Llama": 6,
-    "MiniMax": 7,
-    "Claude": 13,
-    "Gemma": 7,
-    "DeepSeek": 7,
-    "Qwen": 4,
-    "Mistral": 5,
-    "Kimi": 2,
-    "MCP-Server": 9,
-    "多模态": 4,
-    "模型推理": 4,
-    "AI安全对齐": 2,
-    "MiMo": 2,
-    "Phi": 3,
-    "Model Inference": 1
+    "通用工具": 243,
+    "编程开发": 128,
+    "设计与前端": 13,
+    "文档处理": 19,
+    "自动化工作流": 39,
+    "数据与表格": 3,
+    "部署与运维": 8,
+    "写作与媒体": 38,
+    "搜索与研究": 15,
+    "安全检查": 4,
+    "产品与商业": 4
   },
   "typeCount": {
-    "keyword": 277,
-    "skill": 64
+    "skill": 162,
+    "keyword": 352
   },
-  "lastUpdated": "2026-06-30T09:44:27Z"
+  "lastUpdated": "2026-10-21T07:30:08Z"
 }

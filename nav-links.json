@@ -33,13 +33,13 @@
     },
     {
       "href": "claude-account-safety.html",
-      "zh": "Claude账号指南",
-      "en": "Claude Account Safety",
+      "zh": "账号使用指南",
+      "en": "Account guide",
       "match": ["claude-account-safety.html"],
       "nav": ["sub", "plan", "home"],
       "homeGroup": "tools",
       "planGroup": "tools",
-      "homeTitle": "Claude合规使用、账号风险排查与误封申诉"
+      "homeTitle": "Claude / ChatGPT 账号使用、错误排查与申诉"
     },
     {
       "href": "ainews/index.html",

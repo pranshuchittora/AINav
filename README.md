@@ -52,7 +52,7 @@ npm run build
 - `npm run test:content`：验证导出边界、排序筛选、公开页面资源与导航。
 - 各页明确区分源数据日期和导出日期；历史快照不会显示为今日采集。
 
-维护步骤见 [公开内容同步说明](docs/public-content-sync.md)，专题补充内容来自 `topic-updates.json`；原价格与榜单日期保留。
+维护步骤见 [公开内容同步说明](docs/public-content-sync.md)。`topic-updates.json` 仅保留来源调研记录，不向页面插入巡检提示；实质内容直接维护在对应专题中。
 
 ```bash
 npm run build            # 生成页面；从 nav-links.json 同步 plan-nav.js

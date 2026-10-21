@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "fullName": "cloudflare/security-audit-skill",
+    "description": "",
+    "language": "JavaScript",
+    "stars": 0,
+    "todayStars": "1,712 stars today",
+    "crawledAt": "2026-10-21 15:34:02",
+    "url": "https://github.com/cloudflare/security-audit-skill"
+  },
+  {
+    "fullName": "stablyai/orca",
+    "description": "",
+    "language": "TypeScript",
+    "stars": 0,
+    "todayStars": "1,565 stars today",
+    "crawledAt": "2026-10-21 15:34:02",
+    "url": "https://github.com/stablyai/orca"
+  },
+  {
+    "fullName": "sponsors/DietrichGebert",
+    "description": "",
+    "language": "JavaScript",
+    "stars": 0,
+    "todayStars": "1,208 stars today",
+    "crawledAt": "2026-10-21 15:34:02",
+    "url": "https://github.com/sponsors/DietrichGebert"
+  },
+  {
+    "fullName": "Comfy-Org/ComfyUI",
+    "description": "",
+    "language": "Python",
+    "stars": 0,
+    "todayStars": "1,206 stars today",
+    "crawledAt": "2026-10-21 15:34:02",
+    "url": "https://github.com/Comfy-Org/ComfyUI"
+  },
+  {
+    "fullName": "headroomlabs-ai/headroom",
+    "description": "",
+    "language": "Python",
+    "stars": 0,
+    "todayStars": "549 stars today",
+    "crawledAt": "2026-10-21 15:34:02",
+    "url": "https://github.com/headroomlabs-ai/headroom"
+  },
+  {
+    "fullName": "anthropics/knowledge-work-plugins",
+    "description": "",
+    "language": "Python",
+    "stars": 0,
+    "todayStars": "267 stars today",
+    "crawledAt": "2026-10-21 15:34:02",
+    "url": "https://github.com/anthropics/knowledge-work-plugins"
+  },
+  {
+    "fullName": "sponsors/vllm-project",
+    "description": "",
+    "language": "Python",
+    "stars": 0,
+    "todayStars": "128 stars today",
+    "crawledAt": "2026-10-21 15:34:02",
+    "url": "https://github.com/sponsors/vllm-project"
+  }
+]

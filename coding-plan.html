@@ -230,9 +230,6 @@
     </div>
         <div class="cp-title-row">
       <h1 data-i18n="title">💰 AI Coding Plan 横评</h1>
-<!-- topic-update:start -->
-<section class="topic-update" aria-label="内容更新说明" style="margin:1.25rem auto;padding:1rem 1.15rem;max-width:76rem;border:1px solid var(--border,#8b98a9);border-left:4px solid var(--accent,#675ad1);border-radius:8px;line-height:1.7;font-size:.9rem;overflow-wrap:anywhere"><strong>2026-10-21 巡检：Cursor 价表和 Claude 接入边界已核对，其余套餐待逐项复核</strong><ul><li>Cursor 当前官方月付价表列出 Free $0、Plus $8、Premium $30、Super $100、Ultra $200；第三方模型按 API 用量另计，不能继续套用旧 Pro 用量池说明。税费与地区结算以购买页为准。</li><li>Claude Sonnet 5.5 / Haiku 5.5 已发布；第三方开发接入应核对 API 凭据使用边界。个人订阅登录、API 账单和第三方服务套餐不能混算。</li></ul><p>来源：<a href="https://cursor.com/pricing">Cursor 当前价表</a> · <a href="https://code.claude.com/docs/en/legal-and-compliance">Claude 认证与凭据</a> · <a href="claude-account-safety.html">Claude 账号指南</a></p><p style="margin-bottom:0">本次更新仅覆盖以上说明；下方原表格和测评保留原核实日期，未完成复核的价格、额度与排名请勿当作当前数据。</p></section>
-<!-- topic-update:end -->
       <div class="cp-countdown-box" id="countdownBox">
         <div class="cd-row">
           <span class="cd-label">⏰ 抢购中</span>
@@ -698,51 +695,7 @@
     <div class="cp-platforms">
 
       <!-- Cursor -->
-      <div class="cp-platform overseas">
-        <div class="cp-platform-head">
-          <span class="cp-platform-name"><a href="https://cursor.com/" target="_blank" rel="noopener noreferrer">Cursor</a></span>
-          <span class="cp-badge badge-overseas">海外</span>
-          <span class="cp-badge badge-hot">🔥 性价比</span>
-        </div>
-        <div class="cp-platform-body">
-          <table class="cp-table">
-            <thead><tr><th>套餐</th><th>月价</th><th>说明</th><th>备注</th></tr></thead>
-            <tbody>
-              <tr>
-                <td class="plan-name">Hobby</td>
-                <td class="plan-price">$0</td>
-                <td class="plan-models">有限 Agent / Tab</td>
-                <td class="plan-limit">试用</td>
-              </tr>
-              <tr>
-                <td class="plan-name">Pro <span class="cp-badge badge-rec">推荐</span></td>
-                <td class="plan-price">$20/月</td>
-                <td class="plan-models">无限 Tab + Agent 用量池（约 $20 API 额度 + Auto/Composer）</td>
-                <td class="plan-limit">日常主力；含 Claude / GPT / Grok 等</td>
-              </tr>
-              <tr>
-                <td class="plan-name">Pro+</td>
-                <td class="plan-price">$60/月</td>
-                <td class="plan-models">更高 Agent 额度（约 $70 API 池）</td>
-                <td class="plan-limit">日用 Agent 易触顶时升档</td>
-              </tr>
-              <tr>
-                <td class="plan-name">Ultra</td>
-                <td class="plan-price">$200/月</td>
-                <td class="plan-models">重度 Agent（约 $400 API 池）</td>
-                <td class="plan-limit">全天跑 Agent / CI</td>
-              </tr>
-              <tr>
-                <td class="plan-name">Teams</td>
-                <td class="plan-price">$40/人/月</td>
-                <td class="plan-models">团队管理 + 策略管控</td>
-                <td class="plan-limit">协作版</td>
-              </tr>
-            </tbody>
-          </table>
-          <p style="font-size:0.78rem;color:var(--muted);margin:0.55rem 0 0;">2026-07-27：官方档位 Hobby / Pro / Pro+ / Ultra / Teams；用量为双池（Auto+Composer 与第三方 API）。额度以 <a href="https://cursor.com/pricing" target="_blank" rel="noopener noreferrer">cursor.com/pricing</a> 为准。亦见 <a href="https://x.ai/cli" target="_blank" rel="noopener noreferrer">Grok Build</a>。</p>
-        </div>
-      </div>
+      <div class="cp-platform overseas"><div class="cp-platform-head"><span class="cp-platform-name"><a href="https://cursor.com/pricing">Cursor</a></span><span class="cp-badge badge-overseas">海外</span></div><div class="cp-platform-body"><table class="cp-table"><thead><tr><th>套餐</th><th>月价</th><th>类型</th><th>计费说明</th></tr></thead><tbody><tr><td class="plan-name">Free</td><td class="plan-price">$0/月</td><td>个人订阅</td><td class="plan-limit">第三方模型用量另计</td></tr><tr><td class="plan-name">Plus</td><td class="plan-price">$8/月</td><td>个人订阅</td><td class="plan-limit">第三方模型用量另计</td></tr><tr><td class="plan-name">Premium</td><td class="plan-price">$30/月</td><td>个人订阅</td><td class="plan-limit">第三方模型用量另计</td></tr><tr><td class="plan-name">Super</td><td class="plan-price">$100/月</td><td>个人订阅</td><td class="plan-limit">第三方模型用量另计</td></tr><tr><td class="plan-name">Ultra</td><td class="plan-price">$200/月</td><td>个人订阅</td><td class="plan-limit">第三方模型用量另计</td></tr></tbody></table><p>第三方模型按 API 用量另计；具体功能、税费与地区结算请核对<a href="https://cursor.com/pricing">官方价表</a>，不要沿用旧 Pro / Pro+ 的用量池说明。</p></div></div>
 
       <!-- Claude Code -->
       <div class="cp-platform overseas">
@@ -1068,7 +1021,7 @@
 
       <div class="cp-faq-item">
         <div class="cp-faq-q">现在买还是等降价？<span class="cp-faq-arrow">▼</span></div>
-        <div class="cp-faq-a"><strong>刚需就上</strong>：Token 三年降 1000 倍趋势不变，但<strong>早用早提效</strong>。智谱看季付/年付；阿里云 Pro 每日 9:30 限量补货（首月特惠已结束）。海外侧 Claude Max 5×/20×、Cursor Pro+ 是日用常见升档。</div>
+        <div class="cp-faq-a"><strong>刚需就上</strong>：Token 三年降 1000 倍趋势不变，但<strong>早用早提效</strong>。智谱看季付/年付；阿里云 Pro 每日 9:30 限量补货（首月特惠已结束）。海外侧 Claude Max 5×/20×、Cursor 应按当前价表和实际用量选择升档。</div>
       </div>
     </div>
 

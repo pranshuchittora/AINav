@@ -80,9 +80,6 @@ pre{background:var(--panel);border:1px solid var(--border);border-radius:8px;pad
 <div class="cp-wrap">
 
 <h1>Token 优化指南</h1>
-<!-- topic-update:start -->
-<section class="topic-update" aria-label="内容更新说明" style="margin:1.25rem auto;padding:1rem 1.15rem;max-width:76rem;border:1px solid var(--border,#8b98a9);border-left:4px solid var(--accent,#675ad1);border-radius:8px;line-height:1.7;font-size:.9rem;overflow-wrap:anywhere"><strong>2026-10-21 巡检：Claude 缓存计价变化已核对，第三方压缩工具数据待实测</strong><ul><li>Sonnet 5.5 官方发布页列 API 输入 $2 / 输出 $10（每百万 token），缓存读取 $0.10。应按实际模型、缓存命中与完整任务费用比较，不能直接复用旧缓存价格。</li><li>Haiku 5.5 可用于摘要与分类等批量工作；第三方压缩器宣称的节省比例需用自己的任务验证。账号、订阅和 API 接入边界见 Claude 账号指南。</li></ul><p>来源：<a href="https://www.anthropic.com/claude-sonnet-5-5">Sonnet 5.5 计价</a> · <a href="https://www.anthropic.com/claude-haiku-5-5">Haiku 5.5</a> · <a href="claude-account-safety.html">Claude 账号指南</a></p><p style="margin-bottom:0">本次更新仅覆盖以上说明；下方原表格和测评保留原核实日期，未完成复核的价格、额度与排名请勿当作当前数据。</p></section>
-<!-- topic-update:end -->
 <p class="cp-subtitle">面向 <strong>Cursor · Claude Code · Codex</strong>（Cursor 全套餐已可用 <strong>Grok 4.6</strong>）。已用 GitHub API 扫描 <a href="https://github.com/topics/token-optimization" target="_blank" rel="noopener noreferrer"><code>token-optimization</code> 专题</a>（<strong>802</strong> 仓，按 stars 排序，2026-06），见 <a href="#ecosystem">专题分析</a>；安装配置见各章节。</p>
 <p class="cp-updated">最后更新：2026-08-24 · 专题 #1 <a href="https://github.com/rtk-ai/rtk">RTK</a>（66K★）· #2 <a href="https://github.com/headroomlabs-ai/headroom">Headroom</a>（51K★）· #3 <a href="https://github.com/yvgude/lean-ctx">LeanCTX</a>（2.9K★）· <a href="index.html#ext-token-optimize">AINav 工具卡片</a></p>
 <div class="highlight warn-box" style="margin:0.75rem 0 1rem;padding:0.65rem 0.85rem;border:1px solid var(--border);border-radius:8px;font-size:0.82rem;line-height:1.5">
@@ -114,7 +111,7 @@ pre{background:var(--panel);border:1px solid var(--border);border-radius:8px;pad
   <span style="color:var(--accent2)">Tokscale 观测</span>
 </div>
 
-<h2 class="cp-section-hd tok-hd" id="consumer-schedule"><span class="cp-flag">⏰</span> 消费端定时 · 免接 API Token</h2>
+<h2 class="cp-section-hd tok-hd" id="consumer-schedule"><span class="cp-flag">⏰</span> 消费端定时 · 免接 API Token</h2><p>Claude 缓存计价：<a href="https://www.anthropic.com/claude-sonnet-5-5">Sonnet 5.5</a> 输入 $2、输出 $10、缓存读取 $0.10（每百万 token）。请按实际模型、命中率和完整任务费用比较。</p>
 <p class="cp-subtitle" style="margin-top:0">把「全天随聊」改成「每天到点跑一次」，少开对话轮次，直接省<strong>会员额度</strong>——不用自己填 API Key / Coding Plan。能力与限额以各 App 实时页为准；刊例核对截至 2026-08-20。</p>
 <div class="highlight" style="margin-bottom:.85rem"><strong>省额度逻辑：</strong>定时简报 ≈ 少轮次闲聊。仍受各家「活跃任务数 / 会员档」限制（如 Gemini 约 10 个活跃任务）。要 OpenClaw / Hermes 自建 cron，见 <a href="agent-plan.html#loop-engineering">Agent · Loop Engineering</a>（需自备模型 Token）。下文 Headroom / RTK 等面向<strong>编码三省</strong>压缩。</div>
 <table class="tok-table">

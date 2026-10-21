@@ -12,7 +12,7 @@
     { href: "index.html", zh: "← AINav 首页", en: "← AINav Home", match: ["index.html",""], group: "tools" },
     { href: "free-tier.html", zh: "🆓 免费额度", en: "🆓 Free Tier", match: ["free-tier.html"], group: "tools" },
     { href: "token-optimization.html", zh: "Token优化", en: "Token Opt", match: ["token-optimization.html"], group: "tools" },
-    { href: "claude-account-safety.html", zh: "Claude账号指南", en: "Claude Account Safety", match: ["claude-account-safety.html"], group: "tools" },
+    { href: "claude-account-safety.html", zh: "账号使用指南", en: "Account guide", match: ["claude-account-safety.html"], group: "tools" },
     { href: "ainews/index.html", zh: "AI资讯", en: "AI News", match: ["ainews/index.html"], group: "tools" },
     { href: "skill/index.html", zh: "Skill动态", en: "Skill Monitor", match: ["skill/index.html"], group: "tools" },
     { href: "model-finder.html", zh: "模型推荐器", en: "Model Finder", match: ["model-finder.html"], group: "models" },

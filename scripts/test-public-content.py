@@ -56,6 +56,18 @@ class PublicExportTests(unittest.TestCase):
             sync.public_record(row)
         self.assertEqual(sync.public_record(row, {'owner/repo'})['repo']['full_name'], 'owner/repo')
 
+    def test_enrichment_exports_translated_text_and_only_allowed_metadata(self):
+        row={'label':'Claude','repo':{'private':False,'full_name':'owner/repo'},'id':'owner/repo:skills/pdf/SKILL.md',
+             'name':'pdf','description':'Read PDF documents','resource_type':'skill','structure_status':'valid',
+             'skill_path':'skills/pdf/SKILL.md','skill_url':'https://github.com/owner/repo/blob/HEAD/skills/pdf/SKILL.md',
+             'categories':['documents'],'classification_method':'ai','translation':{'status':'translated','title_zh':'PDF 文档','description_zh':'读取 PDF 文档','api_key':'SECRET'}}
+        out=sync.public_record(row)
+        self.assertEqual(out['enrichment']['translation']['descriptionZh'],'读取 PDF 文档')
+        self.assertEqual(out['label'],'文档处理')
+        self.assertNotIn('SECRET',json.dumps(out))
+        row['structure_status']='pending'
+        self.assertNotEqual(sync.public_record(row)['enrichment']['resourceType'],'skill')
+
     def test_failed_skill_validation_does_not_replace_news_snapshot(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

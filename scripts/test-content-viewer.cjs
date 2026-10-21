@@ -23,3 +23,9 @@ test('keeps collector resource types distinct when filtering', () => {
   const rows = [{title:'A',type:'skill'},{title:'B',type:'project'}];
   assert.deepEqual(selectItems(rows,{type:'skill'}).items.map(x=>x.title),['A']);
 });
+
+test('filters secondary tasks and searches original descriptions after translation', () => {
+  const rows = [{title:'表格助手',original:'spreadsheet workbook',category:'文档处理',categories:['文档处理','数据与表格'],discoveryLabels:['Legacy']}];
+  assert.equal(selectItems(rows,{category:'数据与表格',q:'workbook'}).total,1);
+  assert.equal(selectItems(rows,{category:'Legacy'}).total,1);
+});

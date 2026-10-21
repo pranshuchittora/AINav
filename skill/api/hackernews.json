@@ -1,128 +1,65 @@
 [
   {
-    "title": "GLM 5.2 beats Claude in our benchmarks",
-    "score": 1074,
-    "comments": 499,
-    "by": "jms703",
-    "time": "2026-06-29 01:50",
-    "id": 48709670,
-    "url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/"
+    "title": "DeepInfer: High-performance inference framework for DeepSeek models",
+    "score": 2224,
+    "comments": 853,
+    "by": "ggcr",
+    "time": "2026-10-20 17:08",
+    "id": 50163277,
+    "url": "https://github.com/deepseek-ai/DeepInfer"
   },
   {
-    "title": "HackerRank open sourced its ATS. My resume scored 90/100. Oh wait 74. No – 88",
-    "score": 970,
-    "comments": 407,
-    "by": "sambellll",
-    "time": "2026-06-29 09:44",
-    "id": 48713832,
-    "url": "https://danunparsed.com/p/hackerrank-open-source-ats"
+    "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+    "score": 724,
+    "comments": 208,
+    "by": "ds",
+    "time": "2026-10-20 07:22",
+    "id": 50159341,
+    "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions"
   },
   {
-    "title": "The CEO of Mullvad is the main financer of the Swedish Örebro party",
-    "score": 585,
-    "comments": 1279,
-    "by": "Risse",
-    "time": "2026-06-29 18:45",
-    "id": 48717469,
-    "url": "https://det.social/@lostgen/116820546568940358"
+    "title": "Anthropic logged net loss of over $80B in first half of 2026",
+    "score": 140,
+    "comments": 61,
+    "by": "throwa356262",
+    "time": "2026-10-21 04:09",
+    "id": 50171966,
+    "url": "https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/"
   },
   {
-    "title": ".self: A new top-level domain designed to support self-hosting",
-    "score": 433,
-    "comments": 252,
-    "by": "HumanCCF",
-    "time": "2026-06-30 03:49",
-    "id": 48724230,
-    "url": "https://hccf.onmy.cloud/2026/06/21/reclaiming-our-digital-selves-hccfs-vision-for-a-human-centered-top-level-domain/"
+    "title": "Claude designed protein binders against scorpion neurotoxins",
+    "score": 104,
+    "comments": 67,
+    "by": "artninja1988",
+    "time": "2026-10-21 01:48",
+    "id": 50170021,
+    "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
   },
   {
-    "title": "Tidal AI Policy",
-    "score": 299,
-    "comments": 330,
-    "by": "hn8726",
-    "time": "2026-06-29 21:09",
-    "id": 48718840,
-    "url": "https://tidal.com/ai-policy"
-  },
-  {
-    "title": "Ornith-1.0: self-improving open-source models for agentic coding",
-    "score": 189,
-    "comments": 38,
-    "by": "danboarder",
-    "time": "2026-06-30 01:16",
-    "id": 48722052,
-    "url": "https://github.com/deepreinforce-ai/Ornith-1"
-  },
-  {
-    "title": "Apple Neural Engine: Architecture, Programming, and Performance",
-    "score": 151,
-    "comments": 22,
-    "by": "Jimmc414",
-    "time": "2026-06-28 07:30",
-    "id": 48702825,
-    "url": "https://arxiv.org/abs/2606.22283"
-  },
-  {
-    "title": "Herdr: Agent multiplexer that lives in your terminal",
-    "score": 147,
-    "comments": 95,
-    "by": "mzehrer",
-    "time": "2026-06-29 12:27",
-    "id": 48714802,
-    "url": "https://github.com/ogulcancelik/herdr"
-  },
-  {
-    "title": "Working With AI: A concrete example",
-    "score": 134,
-    "comments": 45,
-    "by": "comma_at",
-    "time": "2026-06-29 22:53",
-    "id": 48720064,
-    "url": "https://htmx.org/essays/working-with-ai/"
-  },
-  {
-    "title": "LongCat-2.0, a large-scale MoE model with 1.6T total and 48B Active",
-    "score": 93,
-    "comments": 30,
-    "by": "benjiro29",
-    "time": "2026-06-30 08:30",
-    "id": 48727116,
-    "url": "https://longcat.chat/blog/longcat-2.0/"
-  },
-  {
-    "title": "Ornith-1.0: Self-scaffolding LLMs for agentic coding",
-    "score": 69,
+    "title": "Show HN: Penmentor – Claude marks up your handwritten math like a teacher",
+    "score": 60,
     "comments": 7,
-    "by": "kordlessagain",
-    "time": "2026-06-29 01:58",
-    "id": 48709744,
-    "url": "https://deep-reinforce.com/ornith_1_0.html"
+    "by": "abdullahalharir",
+    "time": "2026-10-20 23:10",
+    "id": 50167604,
+    "url": "https://github.com/AbdullahAlhariri/penmentor"
   },
   {
-    "title": "Micro-Agent: Beat Frontier Models with Collaboration Inside Model API",
-    "score": 67,
-    "comments": 20,
-    "by": "matt_d",
-    "time": "2026-06-30 02:03",
-    "id": 48722802,
-    "url": "https://vllm.ai/blog/2026-06-29-micro-agent-frontier-models"
+    "title": "Benchmarking Bot Detection Systems Against Modern AI Agents in 2026",
+    "score": 42,
+    "comments": 4,
+    "by": "mdahardy",
+    "time": "2026-10-21 01:10",
+    "id": 50169506,
+    "url": "https://research.poh.org/bot-benchmarking-2026/"
   },
   {
-    "title": "Open Memory Protocol – One Memory Store for Claude, ChatGPT, Curso",
-    "score": 26,
-    "comments": 9,
-    "by": "soji_mathew",
-    "time": "2026-06-30 08:05",
-    "id": 48726966,
-    "url": "https://github.com/SMJAI/open-memory-protocol"
-  },
-  {
-    "title": "ACL 1.0: A source-available commercial license for the AI era",
-    "score": 19,
-    "comments": 7,
-    "by": "ilreb",
-    "time": "2026-06-28 17:45",
-    "id": 48705878,
-    "url": "https://www.auditablelicense.org/"
+    "title": "Using Claude to reduce the attack surface of code",
+    "score": 22,
+    "comments": 5,
+    "by": "dnw",
+    "time": "2026-10-21 11:36",
+    "id": 50175779,
+    "url": "https://www.anthropic.com/research/attack-surface-reduction"
   }
 ]

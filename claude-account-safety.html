@@ -2,8 +2,8 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Claude 账号防封与申诉指南 · AINav</title>
-  <meta name="description" content="Claude 账号合规使用、Claude Code 与 API 凭据边界、限流排查和误封申诉。基于官方来源，区分事实与经验，不承诺零封禁。">
+  <title>Claude / ChatGPT 账号使用与申诉指南 · AINav</title>
+  <meta name="description" content="Claude 与 ChatGPT 账号合规使用、订阅与 API 边界、限流排查和误封申诉。基于官方来源，区分事实与经验，不承诺零封禁。">
   <link rel="canonical" href="https://aiv123.com/claude-account-safety.html">
   <link rel="stylesheet" href="content-viewer.css">
   <style>
@@ -12,9 +12,9 @@
 </head>
 <body><div class="content-wrap">
   <nav class="cp-nav" data-plan-nav aria-label="AINav 专题导航"><a href="index.html">AINav 首页</a><a href="coding-plan.html">编程套餐</a><a href="token-optimization.html">Token 优化</a></nav>
-  <header><h1>Claude 账号防封与申诉指南</h1><p class="guide-lead">先选对使用方式，再处理账号风险。减少违规与误判风险，为出现问题时留好恢复路径。</p><p>资料核对：<time datetime="2026-10-21">2026-10-21</time>。不存在官方认可的“保证不封”方案；以下区分官方要求、维护建议和未证实传言。</p></header>
-  <div class="guide-layout"><nav class="guide-toc" aria-label="本页目录"><a href="#choose">选择使用方式</a><a href="#checklist">使用前检查</a><a href="#myths">常见防封误区</a><a href="#troubleshoot">错误排查</a><a href="#appeal">申诉与模板</a><a href="#continuity">保存与恢复</a><a href="#sources">官方来源</a></nav><main class="guide-body">
-  <section id="choose"><h2>你的场景，应该用哪种入口？</h2>
+  <header><h1>Claude / ChatGPT 账号使用与申诉指南</h1><p class="guide-lead">先选对使用方式，再处理账号风险。减少违规与误判风险，为出现问题时留好恢复路径。</p><p>不存在官方认可的“保证不封”方案；以下区分官方要求、维护建议和未证实传言。</p></header>
+  <div class="guide-layout"><nav class="guide-toc" aria-label="本页目录"><a href="#choose">Claude 使用方式</a><a href="#chatgpt">ChatGPT 使用与申诉</a><a href="#checklist">使用前检查</a><a href="#myths">常见防封误区</a><a href="#troubleshoot">错误排查</a><a href="#appeal">申诉与模板</a><a href="#continuity">保存与恢复</a><a href="#sources">官方来源</a></nav><main class="guide-body">
+  <section id="choose"><h2>Claude：你的场景，应该用哪种入口？</h2>
     <div class="guide-table" role="region" aria-label="使用方式对照" tabindex="0"><table><thead><tr><th>场景</th><th>适合的入口</th><th>凭据与边界</th></tr></thead><tbody>
       <tr><td>个人聊天、写作、分析资料</td><td>Claude 网页或官方应用</td><td>本人账号登录，独享使用；订阅可用功能以账号页面为准。</td></tr>
       <tr><td>本人使用 Claude Code</td><td>官方、未修改的 Claude Code</td><td>走官方登录流程使用合适订阅，或配置 API / 支持的云服务商凭据。</td></tr>
@@ -71,13 +71,43 @@ Reference or ticket number, if any: [number].
 Thank you.</textarea>
     <div class="guide-actions"><button id="copy-appeal" type="button">复制申诉模板</button><span id="copy-status" role="status" aria-live="polite"></span></div><p class="source">无需在模板里填写密码、Cookie、token、API key 或完整银行卡信息；在官方渠道按要求提供必要资料。</p>
   </section>
+  <section id="chatgpt"><h2>ChatGPT：账号使用与申诉</h2>
+    <h3>个人使用、多人协作和开发接入</h3>
+    <ul><li>个人账号由本人使用；其他人应使用自己的账号。本人可以在多台设备登录，没有官方统一的“只能一台设备、一个 IP”规则。参见<a href="https://help.openai.com/en/articles/10471989-openai-account-sharing-policy">账号共享政策</a>。</li>
+    <li>多人协作按需要选择组织成员席位；开发接入使用 API。<a href="https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus">ChatGPT Plus 与 API 单独计费</a>，Plus 不等于获得 API 余额。参与官方支持的工具可以按其文档使用 Sign in with ChatGPT；请核对具体工具的授权范围。</li>
+    <li>核实<a href="https://help.openai.com/en/articles/7947663-chatgpt-supported-countries">ChatGPT 支持地区</a>与使用资格；API 有<a href="https://help.openai.com/en/articles/5347006-openai-api-supported-countries-and-territories">独立的支持地区列表</a>。网络能访问不代表具备使用资格。</li>
+    <li>保护邮箱和登录凭据，启用可用的多因素验证；发现异常使用时修改密码并联系官方支持。不要向代申诉人员提供密码、Cookie 或 API key。</li></ul>
+    <h3>报错先排查，明确停用再申诉</h3>
+    <p>先核对账号用量、API 账单、错误原文和<a href="https://status.openai.com/">OpenAI 状态页</a>。额度用完、429 限流与服务故障本身不等于账号停用；按响应提示等待或处理账单，避免连续重试。账号通知要求验证身份或年龄时，按官方流程完成。</p>
+    <ol><li>明确收到停用通知时，优先使用通知邮件中的申诉链接。</li><li>无法使用邮件中的链接，可通过<a href="https://openai.com/form/appeal/">官方申诉表</a>提交；没有收到邮件但失去访问权限时，从帮助中心联系支持。</li><li>提供账号标识、可用的 User ID / Org ID、错误原文与时间、真实用途和已采取的措施。怀疑被盗时说明异常活动的时间范围。</li><li>保存工单，按要求补充事实；不承诺恢复成功率或处理时长。</li></ol>
+    <p class="source">依据：<a href="https://help.openai.com/en/articles/10562188-why-was-my-openai-account-deactivated">账号停用原因与申诉流程</a>、<a href="https://openai.com/policies/terms-of-use/">OpenAI 使用条款</a>。Claude 与 OpenAI 的申诉入口分别处理。</p>
+    <label for="chatgpt-template"><strong>ChatGPT 英文申诉模板：请仅填写真实信息</strong></label>
+    <textarea id="chatgpt-template" spellcheck="false">Subject: Request to review my OpenAI account deactivation
+
+Hello OpenAI Support,
+Please review the deactivation of my account [account email].
+User ID / Org ID, if available: [IDs].
+I first noticed the issue at [date, time, and time zone].
+The exact notification or error was: [message].
+I was using [ChatGPT / API] for [brief factual description].
+I believe this may be a mistake because [specific facts].
+If relevant, I noticed possible unauthorized access during [time range].
+Steps I have already taken: [actual actions].
+Existing ticket number, if any: [number].
+Please let me know what further information is needed.
+Thank you.</textarea>
+    <div class="guide-actions"><button type="button" data-copy="chatgpt-template" data-status="chatgpt-copy-status">复制 ChatGPT 申诉模板</button><span id="chatgpt-copy-status" role="status" aria-live="polite"></span></div>
+    <p class="source">模板不要填写密码、密钥或完整银行卡信息。必要身份或账单资料仅按官方支持的要求在官方渠道提交。</p>
+  </section>
   <section id="continuity"><h2>让账号问题不至于中断工作</h2><ul><li>重要代码、文档、提示词和工作结论保留在自己可控的位置。</li><li>按需要使用官方导出功能。封禁后的可导出范围可能受限制，以账号页面为准。</li><li>准备自己有资格使用的替代工具，保留任务输入和验收标准，降低迁移成本。</li><li>凭据疑似泄露时，先处理邮箱和设备安全，通过官方支持确认恢复路径。</li></ul><p>这些是工作连续性的维护建议，并非平台公布的防封规则。可继续阅读<a href="coding-plan.html">编程套餐</a>和<a href="token-optimization.html">Token 优化</a>。</p></section>
   <section id="sources"><h2>官方来源与维护记录</h2><ul><li><a href="https://www.anthropic.com/legal/consumer-terms">消费者条款</a>：本次页面标注生效日 2025-10-08。</li><li><a href="https://code.claude.com/docs/en/legal-and-compliance">Claude Code 法律与合规</a>：原生应用、托管条件和凭据边界。</li><li><a href="https://www.anthropic.com/legal/supported-regions">支持地区政策</a>：本次页面标注 2026-11-12，属于未来生效版本，需核对当期版本。</li><li><a href="https://www.anthropic.com/legal/aup">使用政策</a>：具体允许和禁止的用途以官方为准。</li><li><a href="https://support.claude.com/en/articles/8241253-safeguards-warnings-and-appeals">警告、申诉、组织暂停与数据导出</a>。</li><li><a href="https://support.claude.com/en/articles/8243635-our-approach-to-rate-limits-for-the-claude-api">API 速率限制</a>、<a href="https://status.claude.com/">实时服务状态</a>。</li></ul><p>2026-10-21：建立本专题，核对上述来源，未采信社区个案中的保号概率与固定阈值。官方网页会继续变化，操作前请再次查看原文。</p></section>
   </main></div><footer><a href="index.html">AINav 首页</a> · <a href="ainews/">AI 资讯</a> · <a href="skill/">Skill 动态</a></footer>
 </div><script src="plan-nav.js" data-active="claude-account-safety.html" data-lang="false"></script><script>
-document.getElementById('copy-appeal').addEventListener('click', async function () {
-  var field = document.getElementById('appeal-template'), status = document.getElementById('copy-status');
+document.getElementById('copy-appeal').dataset.copy = 'appeal-template';
+document.getElementById('copy-appeal').dataset.status = 'copy-status';
+document.querySelectorAll('[data-copy]').forEach(function (button) { button.addEventListener('click', async function () {
+  var field = document.getElementById(button.dataset.copy), status = document.getElementById(button.dataset.status);
   try { await navigator.clipboard.writeText(field.value); status.textContent = '已复制，请替换模板中的方括号。'; }
   catch (_) { field.focus(); field.select(); status.textContent = '已选中模板，请按 Ctrl+C 或使用设备的复制菜单。'; }
-});
+}); });
 </script></body></html>

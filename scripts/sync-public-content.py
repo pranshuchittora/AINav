@@ -9,6 +9,7 @@ import sqlite3
 from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
+TASKS = {'coding':'编程开发','documents':'文档处理','data':'数据与表格','research':'搜索与研究','design':'设计与前端','content':'写作与媒体','automation':'自动化工作流','ops':'部署与运维','security':'安全检查','business':'产品与商业','general':'通用工具'}
 
 
 def safe_url(value):
@@ -69,12 +70,34 @@ def public_record(row, verified_public=()):
     out['html_url'] = safe_url(repo.get('html_url'))
     for key in ('stargazers_count', 'forks_count'):
         out[key] = max(0, int(repo.get(key) or 0))
-    return {'label': text(row.get('label'), 100), 'type': text(row.get('type'), 40), 'foundAt': text(row.get('foundAt'), 40), 'repo': out}
+    result = {'label': text(row.get('label'), 100), 'type': text(row.get('type'), 40), 'foundAt': text(row.get('foundAt'), 40), 'repo': out}
+    if row.get('resource_type'):
+        categories=[key for key in row.get('categories',[]) if key in TASKS][:3] or ['general']
+        status=row.get('structure_status')
+        status=status if status in ('valid','invalid','partial','no_skill_found','pending') else 'pending'
+        kind=row.get('resource_type')
+        kind=kind if kind in ('skill','skill-candidate','mcp','project') else 'project'
+        if kind=='skill' and status!='valid': kind='skill-candidate'
+        translation=row.get('translation',{})
+        translated_status=translation.get('status')
+        translated_status=translated_status if translated_status in ('translated','original_zh','pending','failed') else 'pending'
+        result['label']=TASKS[categories[0]]
+        result['enrichment']={
+            'id':text(row.get('id'),500),'name':text(row.get('name'),200),'description':text(row.get('description'),2000),
+            'resourceType':kind,'structureStatus':status,'inspectedAt':text(row.get('inspected_at'),40),
+            'skillPath':text(row.get('skill_path'),500),'skillUrl':safe_url(row.get('skill_url')),
+            'compatibility':text(row.get('compatibility'),500),'categories':[TASKS[key] for key in categories],
+            'classificationMethod':'ai' if row.get('classification_method')=='ai' else 'rules',
+            'discoveryLabels':[text(label,100) for label in row.get('labels',[row.get('label')]) if isinstance(label,str)][:30],
+            'translation':{'status':translated_status,'titleZh':text(translation.get('title_zh'),200) if translated_status in ('translated','original_zh') else '',
+                           'descriptionZh':text(translation.get('description_zh'),2400) if translated_status in ('translated','original_zh') else ''}}
+    return result
 
 
 def export_skill(source, visibility_path=ROOT / 'skill-public-repos.json'):
     source = Path(source)
-    records = read_json(source / 'data/records.json')
+    enriched = read_json(source / 'data/enriched.json', {})
+    records = enriched.get('records') if enriched else read_json(source / 'data/records.json')
     if not isinstance(records, list) or not records:
         raise ValueError('Skill records must be a non-empty array')
     evidence = read_json(Path(visibility_path), {})
@@ -100,6 +123,10 @@ def export_skill(source, visibility_path=ROOT / 'skill-public-repos.json'):
     result = {'api/records.json': records, 'api/labels.json': [{'name': name, 'count': count} for name, count in sorted(labels.items())]}
     latest = max((row['repo']['updated_at'] for row in records), default='')
     result['api/stats.json'] = {'total': len(records), 'labelCount': dict(labels), 'typeCount': dict(Counter(row['type'] for row in records)), 'lastUpdated': latest}
+    if enriched:
+        pipeline=enriched.get('pipeline',{})
+        result['api/pipeline.json']={key:pipeline.get(key) for key in ('lastRunAt','collectedAt','sourceRepositories','entries','structure','translation','classification','aiConfigured')}
+        result['api/pipeline.json']['collectionStatus']=pipeline.get('collection',{}).get('status','unknown')
     specs = {
         'trending': ('data/trending.json', ('fullName', 'description', 'language', 'stars', 'todayStars', 'crawledAt'), 'url'),
         'hf_trending': ('data/hf_trending.json', ('repoType', 'fullName', 'description', 'likes', 'downloads', 'crawledAt'), 'url'),
@@ -144,7 +171,7 @@ def export_reports(source):
     return {'api/reports.json': sorted(result, key=lambda row: row['date'], reverse=True)}
 
 
-def sync_content(news_source, skill_source, target=ROOT, days=7):
+def sync_content(news_source, skill_source, target=ROOT, days=7, skill_only=False):
     if days < 1 or days > 366:
         raise ValueError('days must be between 1 and 366')
     target = Path(target).resolve()
@@ -152,12 +179,18 @@ def sync_content(news_source, skill_source, target=ROOT, days=7):
     if any(target == source or target.is_relative_to(source) for source in sources):
         raise ValueError('Public output must not be inside a private source')
     # Validate every source before any public mutation.
-    news = export_news(sources[0] / 'push_logs.db', days)
-    news.update(export_reports(sources[0]))
+    news = None
+    if not skill_only:
+        news = export_news(sources[0] / 'push_logs.db', days)
+        news.update(export_reports(sources[0]))
     skill = export_skill(sources[1])
     for name, payload in [('ainews', news), ('skill', skill)]:
+        if payload is None: continue
         latest = payload['api/latest_date.json']['latest_date'] if name == 'ainews' else payload['api/stats.json']['lastUpdated']
         payload['api/manifest.json'] = {'sourceUpdatedAt': latest, 'exportedAt': datetime.now(timezone.utc).isoformat(), 'mode': 'local-snapshot', 'note': '导出不是采集；数据日期早于今天时请按历史快照阅读。'}
+        if 'api/pipeline.json' in payload:
+            pipeline=payload['api/pipeline.json']
+            payload['api/manifest.json'].update(mode='skill-pipeline',collectedAt=pipeline.get('collectedAt'),collectionStatus=pipeline.get('collectionStatus'))
         for filename, value in payload.items():
             path = target / name / filename
             path.parent.mkdir(parents=True, exist_ok=True)
@@ -173,5 +206,6 @@ if __name__ == '__main__':
     parser.add_argument('--skill-source', type=Path, default=ROOT / 'AINav_art/skill')
     parser.add_argument('--output', type=Path, default=ROOT)
     parser.add_argument('--days', type=int, default=7)
+    parser.add_argument('--skill-only', action='store_true')
     args = parser.parse_args()
-    sync_content(args.news_source, args.skill_source, args.output, args.days)
+    sync_content(args.news_source, args.skill_source, args.output, args.days, args.skill_only)

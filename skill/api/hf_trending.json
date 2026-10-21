@@ -1,92 +1,101 @@
 [
   {
     "repoType": "model",
-    "fullName": "baidu/Unlimited-OCR",
+    "fullName": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
     "description": "image-text-to-text",
-    "likes": 1397,
-    "downloads": 362945,
-    "crawledAt": "2026-06-30 14:45:55",
-    "url": "https://huggingface.co/baidu/Unlimited-OCR"
+    "likes": 2029,
+    "downloads": 27737,
+    "crawledAt": "2026-10-21 15:34:03",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
   },
   {
     "repoType": "model",
-    "fullName": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+    "fullName": "black-forest-labs/flux-3-image-klein-comfy",
+    "description": "image-to-image",
+    "likes": 1113,
+    "downloads": 439528,
+    "crawledAt": "2026-10-21 15:34:03",
+    "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy"
+  },
+  {
+    "repoType": "model",
+    "fullName": "fishaudio/drama-3",
+    "description": "text-to-speech",
+    "likes": 850,
+    "downloads": 13495,
+    "crawledAt": "2026-10-21 15:34:03",
+    "url": "https://huggingface.co/fishaudio/drama-3"
+  },
+  {
+    "repoType": "model",
+    "fullName": "meta-models/Muse-Spark-Open-816B-A42B",
     "description": "image-text-to-text",
-    "likes": 985,
-    "downloads": 907682,
-    "crawledAt": "2026-06-30 14:45:55",
-    "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF"
+    "likes": 613,
+    "downloads": 2592,
+    "crawledAt": "2026-10-21 15:34:03",
+    "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B"
   },
   {
     "repoType": "model",
-    "fullName": "zai-org/GLM-5.2",
-    "description": "text-generation",
-    "likes": 2964,
-    "downloads": 133350,
-    "crawledAt": "2026-06-30 14:45:55",
-    "url": "https://huggingface.co/zai-org/GLM-5.2"
+    "fullName": "black-forest-labs/flux-3-image-klein",
+    "description": "image-to-image",
+    "likes": 574,
+    "downloads": 78897,
+    "crawledAt": "2026-10-21 15:34:03",
+    "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein"
   },
   {
     "repoType": "model",
-    "fullName": "deepreinforce-ai/Ornith-1.0-35B-GGUF",
-    "description": "text-generation",
-    "likes": 488,
-    "downloads": 123598,
-    "crawledAt": "2026-06-30 14:45:55",
-    "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF"
+    "fullName": "google/embeddinggemma-2",
+    "description": "feature-extraction",
+    "likes": 2777,
+    "downloads": 172474,
+    "crawledAt": "2026-10-21 15:34:03",
+    "url": "https://huggingface.co/google/embeddinggemma-2"
   },
   {
     "repoType": "model",
-    "fullName": "Qwen/Qwen-AgentWorld-35B-A3B",
-    "description": "text-generation",
-    "likes": 440,
-    "downloads": 26223,
-    "crawledAt": "2026-06-30 14:45:55",
-    "url": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B"
-  },
-  {
-    "repoType": "model",
-    "fullName": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-    "description": "text-generation",
-    "likes": 857,
-    "downloads": 241409,
-    "crawledAt": "2026-06-30 14:45:55",
-    "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF"
-  },
-  {
-    "repoType": "model",
-    "fullName": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
-    "description": "text-generation",
-    "likes": 568,
-    "downloads": 79540,
-    "crawledAt": "2026-06-30 14:45:55",
-    "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M"
-  },
-  {
-    "repoType": "model",
-    "fullName": "krea/Krea-2-Turbo",
+    "fullName": "OpenMOSS-Team/MOSS-Image-SFT",
     "description": "text-to-image",
-    "likes": 396,
-    "downloads": 38454,
-    "crawledAt": "2026-06-30 14:45:55",
-    "url": "https://huggingface.co/krea/Krea-2-Turbo"
+    "likes": 506,
+    "downloads": 4547,
+    "crawledAt": "2026-10-21 15:34:03",
+    "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT"
   },
   {
     "repoType": "model",
-    "fullName": "deepreinforce-ai/Ornith-1.0-9B-GGUF",
-    "description": "text-generation",
-    "likes": 317,
-    "downloads": 68667,
-    "crawledAt": "2026-06-30 14:45:55",
-    "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B-GGUF"
+    "fullName": "Lightricks/LTX-2.5",
+    "description": "image-to-video",
+    "likes": 8654,
+    "downloads": 2039447,
+    "crawledAt": "2026-10-21 15:34:03",
+    "url": "https://huggingface.co/Lightricks/LTX-2.5"
   },
   {
     "repoType": "model",
-    "fullName": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+    "fullName": "jialinyyzz/humanizer",
     "description": "text-generation",
-    "likes": 2509,
-    "downloads": 561577,
-    "crawledAt": "2026-06-30 14:45:55",
-    "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF"
+    "likes": 2034,
+    "downloads": 115341,
+    "crawledAt": "2026-10-21 15:34:03",
+    "url": "https://huggingface.co/jialinyyzz/humanizer"
+  },
+  {
+    "repoType": "model",
+    "fullName": "OpenMOSS-Team/MOSS-Image-Base",
+    "description": "text-to-image",
+    "likes": 440,
+    "downloads": 3558,
+    "crawledAt": "2026-10-21 15:34:03",
+    "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base"
+  },
+  {
+    "repoType": "space",
+    "fullName": "fishaudio/Drama-3",
+    "description": "gradio",
+    "likes": 110,
+    "downloads": 0,
+    "crawledAt": "2026-10-21 15:34:03",
+    "url": "https://huggingface.co/spaces/fishaudio/Drama-3"
   }
 ]

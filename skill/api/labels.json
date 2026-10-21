@@ -1,86 +1,46 @@
 [
   {
-    "name": "AI Agent",
-    "count": 25
+    "name": "产品与商业",
+    "count": 4
   },
   {
-    "name": "AI Coding",
-    "count": 72
+    "name": "写作与媒体",
+    "count": 38
   },
   {
-    "name": "AI Workflow",
-    "count": 5
+    "name": "安全检查",
+    "count": 4
   },
   {
-    "name": "AI安全对齐",
-    "count": 2
+    "name": "搜索与研究",
+    "count": 15
   },
   {
-    "name": "Claude",
-    "count": 13
-  },
-  {
-    "name": "DeepSeek",
-    "count": 7
-  },
-  {
-    "name": "Gemma",
-    "count": 7
-  },
-  {
-    "name": "Kimi",
-    "count": 2
-  },
-  {
-    "name": "LLM Tools",
-    "count": 51
-  },
-  {
-    "name": "LangChain",
-    "count": 18
-  },
-  {
-    "name": "Llama",
-    "count": 6
-  },
-  {
-    "name": "MCP-Server",
-    "count": 9
-  },
-  {
-    "name": "MiMo",
-    "count": 2
-  },
-  {
-    "name": "MiniMax",
-    "count": 7
-  },
-  {
-    "name": "Mistral",
-    "count": 5
-  },
-  {
-    "name": "Model Inference",
-    "count": 1
-  },
-  {
-    "name": "Phi",
+    "name": "数据与表格",
     "count": 3
   },
   {
-    "name": "Qwen",
-    "count": 4
+    "name": "文档处理",
+    "count": 19
   },
   {
-    "name": "RAG",
-    "count": 94
+    "name": "编程开发",
+    "count": 128
   },
   {
-    "name": "多模态",
-    "count": 4
+    "name": "自动化工作流",
+    "count": 39
   },
   {
-    "name": "模型推理",
-    "count": 4
+    "name": "设计与前端",
+    "count": 13
+  },
+  {
+    "name": "通用工具",
+    "count": 243
+  },
+  {
+    "name": "部署与运维",
+    "count": 8
   }
 ]

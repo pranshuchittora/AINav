@@ -1,0 +1,22 @@
+{
+  "lastRunAt": "2026-10-21T07:36:29.164925+00:00",
+  "collectedAt": "2026-10-21T07:34:29.251048+00:00",
+  "sourceRepositories": 385,
+  "entries": 514,
+  "structure": {
+    "valid": 132,
+    "pending": 370,
+    "invalid": 8,
+    "no_skill_found": 4
+  },
+  "translation": {
+    "failed": 10,
+    "pending": 494,
+    "original_zh": 10
+  },
+  "classification": {
+    "rules": 514
+  },
+  "aiConfigured": true,
+  "collectionStatus": "complete"
+}

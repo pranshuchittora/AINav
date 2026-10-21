@@ -9,8 +9,9 @@
     "url": "https://github.com/shellsec/AINav.git"
   },
   "scripts": {
-    "build": "node scripts/build-content-pages.js && node scripts/update-topic-pages.js && node build-html-data.js",
+    "build": "node scripts/build-content-pages.js && node build-html-data.js",
     "sync:content": "python scripts/verify-public-repos.py && python scripts/sync-public-content.py && node scripts/build-content-pages.js",
+    "update:skill": "python scripts/update-skill-content.py",
     "test:content": "python scripts/test-public-content.py && node --test scripts/test-content-viewer.cjs && node scripts/check-content-pages.js",
     "build:tools": "node scripts/build-tool-pages.js",
     "icons": "node download-icons.mjs",
