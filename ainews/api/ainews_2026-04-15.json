@@ -1,0 +1,290 @@
+[
+  {
+    "source": "AIBase",
+    "title": "Anthropic突然要查身份证了，用Claude还需要人脸识别？ Anthropic宣布对Claude部分功能引入身份验证，用户访问特定高级功能、平台例行检查或安全合规场景时可能触发验证。已有Max计划用户在订阅时遇到验证流程，但流程本身不复杂。",
+    "content": "Anthropic突然要查身份证了，用Claude还需要人脸识别？ Anthropic宣布对Claude部分功能引入身份验证，用户访问特定高级功能、平台例行检查或安全合规场景时可能触发验证。已有Max计划用户在订阅时遇到验证流程，但流程本身不复杂。",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 17:41:59.154338"
+  },
+  {
+    "source": "HuggingFace",
+    "title": "HuggingFace最新更新",
+    "content": "🚀 Hugging Face 最新模型更新汇总\n\n==================================================\n📝 MiniMaxAI/MiniMax-M2.7\n\n📝 zai-org/GLM-5.1\n\n📝 Jiunsong/supergemma4-26b-uncensored-gguf-v2\n\n📝 LilaRest/gemma-4-31B-it-NVFP4-turbo\n\n📝 Jiunsong/supergemma4-26b-uncensored-mlx-4bit-v2\n\n==================================================\n📝➡️🖼️ baidu/ERNIE-Image\n\n📝➡️🖼️ baidu/ERNIE-Image-Turbo\n\n📝➡️🖼️ unsloth/ERNIE-Image-Turbo-GGUF\n\n📝➡️🖼️ Tongyi-MAI/Z-Image-Turbo\n\n📝➡️🖼️ ChenkinNoob/ChenkinNoob-XL-V0.5\n\n==================================================\n🖼️➡️📝 zai-org/GLM-OCR\n\n🖼️➡️📝 nvidia/nemotron-ocr-v2\n\n🖼️➡️📝 tiiuae/Falcon-OCR\n\n🖼️➡️📝 lolzinventor/Qwen3.5-4B-Base-ZitGen-V1\n\n🖼️➡️📝 monkt/paddleocr-onnx",
+    "category": "",
+    "url": "",
+    "time": "2026-04-15 17:36:57.030241"
+  },
+  {
+    "source": "AIBase",
+    "title": "阿里发布AI开发工具Meoo，助力零门槛创意变现！ 阿里巴巴旗下ATH事业群推出AI开发工具Meoo（秒悟），集成千问、Kimi、GLM和MiniMax四大模型，支持用户零门槛将创意转化为产品。用户只需用自然语言描述想法，即可在一分钟内自动生成网站或H5页面，并一键部署至阿里云上线。",
+    "content": "阿里发布AI开发工具Meoo，助力零门槛创意变现！ 阿里巴巴旗下ATH事业群推出AI开发工具Meoo（秒悟），集成千问、Kimi、GLM和MiniMax四大模型，支持用户零门槛将创意转化为产品。用户只需用自然语言描述想法，即可在一分钟内自动生成网站或H5页面，并一键部署至阿里云上线。",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 17:36:51.765037"
+  },
+  {
+    "source": "AIBase",
+    "title": "苹果曾秘密警告马斯克：Grok再不整改就下架 苹果曾私下警告X公司，因其AI工具Grok存在生成不雅图片风险，尤其涉及未成年人，违反应用商店规定。若X不整改，苹果将下架其应用。此事近期因致美国参议员信件曝光而引发关注。",
+    "content": "苹果曾秘密警告马斯克：Grok再不整改就下架 苹果曾私下警告X公司，因其AI工具Grok存在生成不雅图片风险，尤其涉及未成年人，违反应用商店规定。若X不整改，苹果将下架其应用。此事近期因致美国参议员信件曝光而引发关注。",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 14:59:01.892123"
+  },
+  {
+    "source": "AIBase",
+    "title": "100B匿名模型Elephant冲上OpenRouter趋势榜第二 匿名模型ElephantAlpha上线一天即登OpenRouter趋势榜前列，日使用量激增377%。该模型参数量达1000亿，支持256K上下文输入和32K输出，在保持与同类先进模型相当智能水平的同时，具备更快响应速度和更低资源消耗。目前社区对其来源猜测不一，可能是国产最新模型的Flash版本或海外模型。",
+    "content": "100B匿名模型Elephant冲上OpenRouter趋势榜第二 匿名模型ElephantAlpha上线一天即登OpenRouter趋势榜前列，日使用量激增377%。该模型参数量达1000亿，支持256K上下文输入和32K输出，在保持与同类先进模型相当智能水平的同时，具备更快响应速度和更低资源消耗。目前社区对其来源猜测不一，可能是国产最新模型的Flash版本或海外模型。",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 14:38:59.739952"
+  },
+  {
+    "source": "AIBase",
+    "title": "OpenAI的\"地盘\"被微软接手，星门计划正在悄悄变形",
+    "content": "OpenAI的\"地盘\"被微软接手，星门计划正在悄悄变形",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 14:13:18.199332"
+  },
+  {
+    "source": "AIBase",
+    "title": "谷歌发布全新Windows桌面AI应用，轻松两键即可搜索！ 谷歌推出Windows版AI搜索应用，用户无需浏览器即可快速搜索。内置GeminiAI技术，按Alt+Space键即可呼出界面，输入问题获取即时结果。",
+    "content": "谷歌发布全新Windows桌面AI应用，轻松两键即可搜索！ 谷歌推出Windows版AI搜索应用，用户无需浏览器即可快速搜索。内置GeminiAI技术，按Alt+Space键即可呼出界面，输入问题获取即时结果。",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 13:58:16.601222"
+  },
+  {
+    "source": "AI-Bot",
+    "title": "【百度文心开源文生图模型 ERNIE-Image】",
+    "content": "【百度文心开源文生图模型 ERNIE-Image】\n百度文心正式开源文生图模型 ERNIE-Image，仅8B参数达到开源SOTA水平，在文字渲染、复杂指令遵循等能力上媲美Nano Banana等商业闭源模型。模型24GB显存即可运行，支持中英日韩多语言精准字形生成，已上线ComfyUI并推出GGUF量化方案，相关权重与推理代码已在Hugging Face开源。",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 12:41:21.911718"
+  },
+  {
+    "source": "AIBase",
+    "title": "DeepSeek在内蒙古乌兰察布设立数据中心，开启高薪招聘 DeepSeek首次在内蒙古乌兰察布招聘，为当地新建数据中心招募人才，岗位包括高级交付经理和高级运维工程师，月薪1.5万至3万元，采用14薪制。此举将促进乌兰察布云计算产业发展。",
+    "content": "DeepSeek在内蒙古乌兰察布设立数据中心，开启高薪招聘 DeepSeek首次在内蒙古乌兰察布招聘，为当地新建数据中心招募人才，岗位包括高级交付经理和高级运维工程师，月薪1.5万至3万元，采用14薪制。此举将促进乌兰察布云计算产业发展。",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 11:52:42.071094"
+  },
+  {
+    "source": "AIBase",
+    "title": "跨境电商杀入3.0时代，亚马逊押注AI这张牌，玩家们准备好了吗？ 跨境电商进入AI驱动新阶段，亚马逊推出AI购物助手Rufus，通过智能推荐和问答提升购物体验，标志着行业向智能化、个性化服务升级。",
+    "content": "跨境电商杀入3.0时代，亚马逊押注AI这张牌，玩家们准备好了吗？ 跨境电商进入AI驱动新阶段，亚马逊推出AI购物助手Rufus，通过智能推荐和问答提升购物体验，标志着行业向智能化、个性化服务升级。",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 11:42:41.264930"
+  },
+  {
+    "source": "AIBase",
+    "title": "天猫推出新规：规范AI软件及应用商品发布体验 天猫发布新规，要求商家在发布AI软件及应用类商品时，必须将其归类于指定目录，并确保产品信息真实透明。新规已于2026年4月14日正式生效，旨在提升消费者购物体验。",
+    "content": "天猫推出新规：规范AI软件及应用商品发布体验 天猫发布新规，要求商家在发布AI软件及应用类商品时，必须将其归类于指定目录，并确保产品信息真实透明。新规已于2026年4月14日正式生效，旨在提升消费者购物体验。",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 11:37:40.888925"
+  },
+  {
+    "source": "AIBase",
+    "title": "美团发布AI产品“小团健康管家”与“健康卡”，正式入局AI家庭健康管理赛道 美团在乌镇健康大会发布AI产品“小团健康管家”及付费会员“健康卡”，首次以AI与会员服务结合切入家庭健康管理。用户可通过美团App使用，该管家提供问病问药、健康咨询及家庭健康管理服务。",
+    "content": "美团发布AI产品“小团健康管家”与“健康卡”，正式入局AI家庭健康管理赛道 美团在乌镇健康大会发布AI产品“小团健康管家”及付费会员“健康卡”，首次以AI与会员服务结合切入家庭健康管理。用户可通过美团App使用，该管家提供问病问药、健康咨询及家庭健康管理服务。",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 11:27:40.183512"
+  },
+  {
+    "source": "AIBase",
+    "title": "OpenAI投资者因Anthropic崛起而重新审视投资策略 《金融时报》报道称，OpenAI高达8520亿美元的估值正引发投资者质疑，主要因其面临Anthropic的激烈竞争。Anthropic年化收入从2025年底的90亿美元猛增至2026年3月的300亿美元，增长动力来自其编码工具需求强劲。有同时投资两家公司的投资者指出，OpenAI近期融资的合理性假设面临挑战。",
+    "content": "OpenAI投资者因Anthropic崛起而重新审视投资策略 《金融时报》报道称，OpenAI高达8520亿美元的估值正引发投资者质疑，主要因其面临Anthropic的激烈竞争。Anthropic年化收入从2025年底的90亿美元猛增至2026年3月的300亿美元，增长动力来自其编码工具需求强劲。有同时投资两家公司的投资者指出，OpenAI近期融资的合理性假设面临挑战。",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 10:51:39.045035"
+  },
+  {
+    "source": "AIBase",
+    "title": "菜鸟发布首款自研攀爬机器人ZeeBot：10秒登顶5层货架",
+    "content": "菜鸟发布首款自研攀爬机器人ZeeBot：10秒登顶5层货架",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 10:41:27.682928"
+  },
+  {
+    "source": "AIBase",
+    "title": "阿里千问AI眼镜全球首店今日开业！选在机场开，这步棋走得很妙 4月15日，阿里千问AI眼镜全球首家线下体验店在南京禄口机场T2航站楼开业。该店由东部机场集团与阿里巴巴合作打造，是千问AI硬件生态的首个线下综合体验中心。不同于普通展示柜台，它提供“尖端科技体验+专业验光配镜”一站式服务，并与南京明亮眼镜合作，打通从体验、验光到配镜的全流程。",
+    "content": "阿里千问AI眼镜全球首店今日开业！选在机场开，这步棋走得很妙 4月15日，阿里千问AI眼镜全球首家线下体验店在南京禄口机场T2航站楼开业。该店由东部机场集团与阿里巴巴合作打造，是千问AI硬件生态的首个线下综合体验中心。不同于普通展示柜台，它提供“尖端科技体验+专业验光配镜”一站式服务，并与南京明亮眼镜合作，打通从体验、验光到配镜的全流程。",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 10:26:10.950185"
+  },
+  {
+    "source": "AIBase",
+    "title": "Anthropic创始人确认向特朗普政府介绍新AI模型Mythos Anthropic联合创始人确认，曾向特朗普政府介绍未公开的AI模型Mythos，因其网络安全能力强大。公司虽起诉美国防部将其列为供应链风险，但仍保持与政府沟通。",
+    "content": "Anthropic创始人确认向特朗普政府介绍新AI模型Mythos Anthropic联合创始人确认，曾向特朗普政府介绍未公开的AI模型Mythos，因其网络安全能力强大。公司虽起诉美国防部将其列为供应链风险，但仍保持与政府沟通。",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 10:21:07.388241"
+  },
+  {
+    "source": "arXiv AI",
+    "title": "[论文] From edges to meaning: Semantic line sketches as a cognitive scaffold for ancient pictograph invention",
+    "content": "From edges to meaning: Semantic line sketches as a cognitive scaffold for ancient pictograph invention",
+    "category": "AI资讯",
+    "url": "https://arxiv.org/abs/2604.12865",
+    "time": "2026-04-15 10:01:33.850897"
+  },
+  {
+    "source": "arXiv AI",
+    "title": "[论文] QuarkMedSearch: A Long-Horizon Deep Search Agent for Exploring Medical Intelligence",
+    "content": "QuarkMedSearch: A Long-Horizon Deep Search Agent for Exploring Medical Intelligence",
+    "category": "AI资讯",
+    "url": "https://arxiv.org/abs/2604.12867",
+    "time": "2026-04-15 10:01:33.835728"
+  },
+  {
+    "source": "arXiv AI",
+    "title": "[论文] LIFE -- an energy efficient advanced continual learning agentic AI framework for frontier systems",
+    "content": "LIFE -- an energy efficient advanced continual learning agentic AI framework for frontier systems",
+    "category": "AI资讯",
+    "url": "https://arxiv.org/abs/2604.12874",
+    "time": "2026-04-15 10:01:33.822021"
+  },
+  {
+    "source": "arXiv AI",
+    "title": "[论文] AISafetyBenchExplorer: A Metric-Aware Catalogue of AI Safety Benchmarks Reveals Fragmented Measurement and Weak Benchmark Governance",
+    "content": "AISafetyBenchExplorer: A Metric-Aware Catalogue of AI Safety Benchmarks Reveals Fragmented Measurement and Weak Benchmark Governance",
+    "category": "AI资讯",
+    "url": "https://arxiv.org/abs/2604.12875",
+    "time": "2026-04-15 10:01:33.806499"
+  },
+  {
+    "source": "arXiv AI",
+    "title": "[论文] BEAM: Bi-level Memory-adaptive Algorithmic Evolution for LLM-Powered Heuristic Design",
+    "content": "BEAM: Bi-level Memory-adaptive Algorithmic Evolution for LLM-Powered Heuristic Design",
+    "category": "AI资讯",
+    "url": "https://arxiv.org/abs/2604.12898",
+    "time": "2026-04-15 10:01:33.793551"
+  },
+  {
+    "source": "arXiv AI",
+    "title": "[论文] Drawing on Memory: Dual-Trace Encoding Improves Cross-Session Recall in LLM Agents",
+    "content": "Drawing on Memory: Dual-Trace Encoding Improves Cross-Session Recall in LLM Agents",
+    "category": "AI资讯",
+    "url": "https://arxiv.org/abs/2604.12948",
+    "time": "2026-04-15 10:01:33.779784"
+  },
+  {
+    "source": "arXiv AI",
+    "title": "[论文] Modeling Co-Pilots for Text-to-Model Translation",
+    "content": "Modeling Co-Pilots for Text-to-Model Translation",
+    "category": "AI资讯",
+    "url": "https://arxiv.org/abs/2604.12955",
+    "time": "2026-04-15 10:01:33.764724"
+  },
+  {
+    "source": "arXiv AI",
+    "title": "[论文] Cycle-Consistent Search: Question Reconstructability as a Proxy Reward for Search Agent Training",
+    "content": "Cycle-Consistent Search: Question Reconstructability as a Proxy Reward for Search Agent Training",
+    "category": "AI资讯",
+    "url": "https://arxiv.org/abs/2604.12967",
+    "time": "2026-04-15 10:01:33.750883"
+  },
+  {
+    "source": "arXiv AI",
+    "title": "[论文] Bilevel Late Acceptance Hill Climbing for the Electric Capacitated Vehicle Routing Problem",
+    "content": "Bilevel Late Acceptance Hill Climbing for the Electric Capacitated Vehicle Routing Problem",
+    "category": "AI资讯",
+    "url": "https://arxiv.org/abs/2604.13013",
+    "time": "2026-04-15 10:01:33.736901"
+  },
+  {
+    "source": "arXiv AI",
+    "title": "[论文] PAL: Personal Adaptive Learner",
+    "content": "PAL: Personal Adaptive Learner",
+    "category": "AI资讯",
+    "url": "https://arxiv.org/abs/2604.13017",
+    "time": "2026-04-15 10:01:33.714348"
+  },
+  {
+    "source": "AIBase",
+    "title": "供应链攻击波及OpenAI！macOS用户请立刻检查你的应用版本 OpenAI确认其产品受Axios库供应链攻击影响，但未发现数据泄露或系统入侵。公司已更新macOS应用安全认证，敦促用户尽快升级至最新版本以防范风险。",
+    "content": "供应链攻击波及OpenAI！macOS用户请立刻检查你的应用版本 OpenAI确认其产品受Axios库供应链攻击影响，但未发现数据泄露或系统入侵。公司已更新macOS应用安全认证，敦促用户尽快升级至最新版本以防范风险。",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 10:00:46.500018"
+  },
+  {
+    "source": "AIBase",
+    "title": "谷歌Gemini新功能炸了！复杂概念秒变可玩模拟，学物理再也不用死记硬背 谷歌Gemini推出交互式模拟生成功能，可将复杂概念转化为可操作的动态模拟，让用户通过动手操作直观理解，如月球绕地球运行等抽象知识。",
+    "content": "谷歌Gemini新功能炸了！复杂概念秒变可玩模拟，学物理再也不用死记硬背 谷歌Gemini推出交互式模拟生成功能，可将复杂概念转化为可操作的动态模拟，让用户通过动手操作直观理解，如月球绕地球运行等抽象知识。",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 09:40:35.305412"
+  },
+  {
+    "source": "AIBase",
+    "title": "国产万亿大模型KimiK2.6-code上线：对标Sonnet4.6的编程新利器 月之暗面推出专为AI编程优化的万亿参数大模型KimiK2.6-code-preview，已在KimiCode上线，标志着国产编程AI进入万亿参数时代。该模型在K2.5基础上深度优化，重点提升推理深度、代码生成可靠性和多轮对话能力，思维链表现更强，代码生成更稳定，支持复杂编程任务。",
+    "content": "国产万亿大模型KimiK2.6-code上线：对标Sonnet4.6的编程新利器 月之暗面推出专为AI编程优化的万亿参数大模型KimiK2.6-code-preview，已在KimiCode上线，标志着国产编程AI进入万亿参数时代。该模型在K2.5基础上深度优化，重点提升推理深度、代码生成可靠性和多轮对话能力，思维链表现更强，代码生成更稳定，支持复杂编程任务。",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 09:30:34.427889"
+  },
+  {
+    "source": "AIBase",
+    "title": "国产万亿大模型KimiK2.6-code上线：对标Sonnet4.6的编程新利器",
+    "content": "国产万亿大模型KimiK2.6-code上线：对标Sonnet4.6的编程新利器",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 09:25:34.005484"
+  },
+  {
+    "source": "AIBase",
+    "title": "NAACP控告埃隆・马斯克的xAI在孟菲斯附近排放有毒污染物",
+    "content": "NAACP控告埃隆・马斯克的xAI在孟菲斯附近排放有毒污染物",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 09:20:33.596241"
+  },
+  {
+    "source": "AIBase",
+    "title": "Chrome为Gemini上线“技能库”：一键复用提示词，告别重复输入",
+    "content": "Chrome为Gemini上线“技能库”：一键复用提示词，告别重复输入",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 09:15:33.236444"
+  },
+  {
+    "source": "AIBase",
+    "title": "微软推出MAI-Image-2-Efficient：高效低成本的图像生成模型 微软推出升级版图像生成模型MAI-Image-2-Efficient，主打低成本与高效能。该模型以近乎半价提供生产级质量，适合企业快速生成产品实拍图和UI原型图。生成速度提升22%，整体效率提高4倍，成本显著降低。",
+    "content": "微软推出MAI-Image-2-Efficient：高效低成本的图像生成模型 微软推出升级版图像生成模型MAI-Image-2-Efficient，主打低成本与高效能。该模型以近乎半价提供生产级质量，适合企业快速生成产品实拍图和UI原型图。生成速度提升22%，整体效率提高4倍，成本显著降低。",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 09:05:32.261106"
+  },
+  {
+    "source": "AIBase",
+    "title": "ScienceCorp聘请顶级神经生物学家，推进生物混合脑机接口首次人体试验",
+    "content": "ScienceCorp聘请顶级神经生物学家，推进生物混合脑机接口首次人体试验",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 09:00:31.760174"
+  },
+  {
+    "source": "AIBase",
+    "title": "金融AI规模化元年！13家银行砸1800亿死磕科技，大模型成标配 2025年财报显示，13家上市银行金融科技总投入超1800亿元，行业数字化转型进入规模化落地阶段。国有大行与股份制银行投入保持稳健增长，从战略布局转向实战爆发期。",
+    "content": "金融AI规模化元年！13家银行砸1800亿死磕科技，大模型成标配 2025年财报显示，13家上市银行金融科技总投入超1800亿元，行业数字化转型进入规模化落地阶段。国有大行与股份制银行投入保持稳健增长，从战略布局转向实战爆发期。",
+    "category": "AI资讯",
+    "url": "",
+    "time": "2026-04-15 08:55:31.363173"
+  },
+  {
+    "source": "Cognition AI",
+    "title": "Cognition AI 博客最新更新：",
+    "content": "Cognition AI 博客更新 - 2026-04-15 01:21:47\n\nCognition AI 博客最新更新：\n\n标题: New self-serve plans for Devin\n发布日期: 2026-04-15\n链接: https://cognition.ai/blog/1\n• We’re retiring the old Core and Team plans and introducing a new lineup: Free, Pro, Max, Teams, and Enterprise. We’re also beginning to charge for pro...",
+    "category": "AI博客",
+    "url": "https://www.cognition-labs.com/blog",
+    "time": "2026-04-15 01:21:47.112739"
+  }
+]

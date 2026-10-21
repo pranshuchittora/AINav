@@ -43,6 +43,17 @@ npm run build
 
 ## 常用命令
 
+### 资讯、Skill 与账号指南（2026-10-21）
+
+- 新增 `claude-account-safety.html`：Claude 账号使用边界、错误排查与申诉模板。
+- `ainews/` 和 `skill/` 仅保存公开网页和白名单数据；采集程序仍在被忽略的 `AINav_art/`。
+- `npm run sync:content`：匿名核验旧 GitHub 记录的公开可见性，再从本地已有数据导出快照；不会启动资讯采集、分析或推送。需要 Python 3.10+。
+- `npm run build`：从已提交的公开 JSON 重建快照页面、更新专题说明并构建主站。
+- `npm run test:content`：验证导出边界、排序筛选、公开页面资源与导航。
+- 各页明确区分源数据日期和导出日期；历史快照不会显示为今日采集。
+
+维护步骤见 [公开内容同步说明](docs/public-content-sync.md)，专题补充内容来自 `topic-updates.json`；原价格与榜单日期保留。
+
 ```bash
 npm run build            # 生成页面；从 nav-links.json 同步 plan-nav.js
 npm run icons            # 按 avatar 下载图标

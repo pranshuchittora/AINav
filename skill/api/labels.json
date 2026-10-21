@@ -1,172 +1,86 @@
 [
   {
-    "Name": "AI Coding",
-    "Count": 73,
-    "Source": 0
+    "name": "AI Agent",
+    "count": 25
   },
   {
-    "Name": "RAG",
-    "Count": 68,
-    "Source": 0
+    "name": "AI Coding",
+    "count": 72
   },
   {
-    "Name": "LLM Tools",
-    "Count": 38,
-    "Source": 0
+    "name": "AI Workflow",
+    "count": 5
   },
   {
-    "Name": "AI Agent",
-    "Count": 30,
-    "Source": 0
+    "name": "AI安全对齐",
+    "count": 2
   },
   {
-    "Name": "LangChain",
-    "Count": 22,
-    "Source": 0
+    "name": "Claude",
+    "count": 13
   },
   {
-    "Name": "Claude",
-    "Count": 18,
-    "Source": 0
+    "name": "DeepSeek",
+    "count": 7
   },
   {
-    "Name": "MCP-Server",
-    "Count": 13,
-    "Source": 0
+    "name": "Gemma",
+    "count": 7
   },
   {
-    "Name": "DeepSeek",
-    "Count": 13,
-    "Source": 0
+    "name": "Kimi",
+    "count": 2
   },
   {
-    "Name": "MiniMax",
-    "Count": 7,
-    "Source": 0
+    "name": "LLM Tools",
+    "count": 51
   },
   {
-    "Name": "Gemma",
-    "Count": 7,
-    "Source": 0
+    "name": "LangChain",
+    "count": 18
   },
   {
-    "Name": "Llama",
-    "Count": 6,
-    "Source": 0
+    "name": "Llama",
+    "count": 6
   },
   {
-    "Name": "AI Workflow",
-    "Count": 5,
-    "Source": 0
+    "name": "MCP-Server",
+    "count": 9
   },
   {
-    "Name": "Mistral",
-    "Count": 5,
-    "Source": 0
+    "name": "MiMo",
+    "count": 2
   },
   {
-    "Name": "Qwen",
-    "Count": 5,
-    "Source": 0
+    "name": "MiniMax",
+    "count": 7
   },
   {
-    "Name": "Phi",
-    "Count": 4,
-    "Source": 0
+    "name": "Mistral",
+    "count": 5
   },
   {
-    "Name": "Kimi",
-    "Count": 2,
-    "Source": 0
+    "name": "Model Inference",
+    "count": 1
   },
   {
-    "Name": "Model Inference",
-    "Count": 1,
-    "Source": 0
+    "name": "Phi",
+    "count": 3
   },
   {
-    "Name": "Hermes",
-    "Count": 0,
-    "Source": 0
+    "name": "Qwen",
+    "count": 4
   },
   {
-    "Name": "Fine-tuning",
-    "Count": 0,
-    "Source": 0
+    "name": "RAG",
+    "count": 94
   },
   {
-    "Name": "Claude-Skill",
-    "Count": 0,
-    "Source": 0
+    "name": "多模态",
+    "count": 4
   },
   {
-    "Name": "AI Safety",
-    "Count": 0,
-    "Source": 0
-  },
-  {
-    "Name": "Embodied AI",
-    "Count": 0,
-    "Source": 0
-  },
-  {
-    "Name": "AI Speech",
-    "Count": 0,
-    "Source": 0
-  },
-  {
-    "Name": "GLM",
-    "Count": 0,
-    "Source": 0
-  },
-  {
-    "Name": "AI Memory",
-    "Count": 0,
-    "Source": 0
-  },
-  {
-    "Name": "AI Eval",
-    "Count": 0,
-    "Source": 0
-  },
-  {
-    "Name": "AIGC",
-    "Count": 0,
-    "Source": 0
-  },
-  {
-    "Name": "Multimodal",
-    "Count": 0,
-    "Source": 0
-  },
-  {
-    "Name": "Vector DB",
-    "Count": 0,
-    "Source": 0
-  },
-  {
-    "Name": "AI Search",
-    "Count": 0,
-    "Source": 0
-  },
-  {
-    "Name": "模型推理",
-    "Count": 5,
-    "Source": 1
-  },
-  {
-    "Name": "AI安全对齐",
-    "Count": 5,
-    "Source": 1
-  },
-  {
-    "Name": "多模态",
-    "Count": 5,
-    "Source": 1
-  },
-  {
-    "Name": "MiMo",
-    "Count": 2,
-    "Source": 1
+    "name": "模型推理",
+    "count": 4
   }
 ]

@@ -1,0 +1,95 @@
+{
+  "checkedAt": "2026-10-21",
+  "pages": {
+    "model-plan.html": {
+      "status": "新增型号已核对，历史排名与其余价格待复核",
+      "items": ["Claude Sonnet 5.5 已于 9 月 28 日发布，Haiku 5.5 于 10 月 7 日发布。日常明确任务可比较 Sonnet，批量分类、摘要等可评估 Haiku；不要只按旧旗舰榜单选型。", "Google 模型目录已列出 Gemini 4 Argon（gemini-4-argon）；3.8 Flash 仍是独立的速度与成本选项。下方榜单是原日期快照。"],
+      "sources": [["Sonnet 5.5", "https://www.anthropic.com/claude-sonnet-5-5"], ["Haiku 5.5", "https://www.anthropic.com/claude-haiku-5-5"], ["Google 模型目录", "https://ai.google.dev/gemini-api/docs/models"]]
+    },
+    "coding-plan.html": {
+      "status": "Cursor 价表和 Claude 接入边界已核对，其余套餐待逐项复核",
+      "items": ["Cursor 当前官方月付价表列出 Free $0、Plus $8、Premium $30、Super $100、Ultra $200；第三方模型按 API 用量另计，不能继续套用旧 Pro 用量池说明。税费与地区结算以购买页为准。", "Claude Sonnet 5.5 / Haiku 5.5 已发布；第三方开发接入应核对 API 凭据使用边界。个人订阅登录、API 账单和第三方服务套餐不能混算。"],
+      "sources": [["Cursor 当前价表", "https://cursor.com/pricing"], ["Claude 认证与凭据", "https://code.claude.com/docs/en/legal-and-compliance"], ["Claude 账号指南", "claude-account-safety.html"]]
+    },
+    "agent-plan.html": {
+      "status": "Claude 新型号与 Agent 工程建议已补充，产品矩阵待复核",
+      "items": ["Claude 5.5 家族已包含 Sonnet 和 Haiku，可按任务复杂度分工，使用前比较实际质量和费用。", "长任务应保留进度、工作文件和验收结果，便于跨会话恢复；搭建对外服务时按官方认证文档选择 API，而不是中转个人订阅 token。"],
+      "sources": [["Haiku 5.5", "https://www.anthropic.com/claude-haiku-5-5"], ["长任务工程实践", "https://www.anthropic.com/research/effective-harnesses-for-long-running-agents"], ["认证边界", "https://code.claude.com/docs/en/legal-and-compliance"]]
+    },
+    "token-optimization.html": {
+      "status": "Claude 缓存计价变化已核对，第三方压缩工具数据待实测",
+      "items": ["Sonnet 5.5 官方发布页列 API 输入 $2 / 输出 $10（每百万 token），缓存读取 $0.10。应按实际模型、缓存命中与完整任务费用比较，不能直接复用旧缓存价格。", "Haiku 5.5 可用于摘要与分类等批量工作；第三方压缩器宣称的节省比例需用自己的任务验证。账号、订阅和 API 接入边界见 Claude 账号指南。"],
+      "sources": [["Sonnet 5.5 计价", "https://www.anthropic.com/claude-sonnet-5-5"], ["Haiku 5.5", "https://www.anthropic.com/claude-haiku-5-5"], ["Claude 账号指南", "claude-account-safety.html"]]
+    },
+    "video-plan.html": {
+      "status": "接口停用公告已核对，其余平台价格待复核",
+      "items": ["迁移提醒：Google 公告 Gemini API 的 Veo 3.1 Preview、Fast Preview、Lite Preview 将于 2026-10-22 关闭。该时间在本次核对时尚未到来，请提前迁移；不要扩展为所有云平台的 Veo 产品都停服。", "官方提供的迁移方向为 Gemini Omni Flash（gemini-omni-1.1-flash）或 Gemini Enterprise Agent Platform 上的 GA 模型，需另行核对功能和价格。"],
+      "sources": [["Google 视频生成与停用公告", "https://ai.google.dev/gemini-api/docs/video"]]
+    },
+    "image-plan.html": {
+      "status": "Google 图像型号已核对，其余平台额度待复核",
+      "items": ["Google 图像文档已列出 Nano Banana 2.1（gemini-nano-banana-2.1），并建议新项目采用；Nano Banana Pro、2 Lite 等仍是不同定位的型号。原套餐比较不等于新型号均包含在该套餐中。"],
+      "sources": [["Google 图像模型选型", "https://ai.google.dev/gemini-api/docs/image-generation"]]
+    },
+    "voice-plan.html": {
+      "status": "Google TTS 新型号已核对，语音套餐与授权待复核",
+      "items": ["Google 文档区分 Gemini 3.8 Flash TTS 与 Flash-Lite TTS：前者面向表达与音质要求，后者面向速度与批量生产。迁移时需检查 speech_metadata 的指令格式，不能只替换模型名。"],
+      "sources": [["Google 语音生成与迁移说明", "https://ai.google.dev/gemini-api/docs/speech-generation"]]
+    },
+    "music-plan.html": {
+      "status": "Lyria API 已核对，商业授权与其它套餐待复核",
+      "items": ["Google 音乐文档已提供 Lyria 3.5 与 Clip 的生成流程；当前音乐生成是单轮流程，不支持多轮编辑。API 能调用不代表取得任何第三方素材授权，商用前仍需核对产品条款。"],
+      "sources": [["Lyria 音乐生成文档", "https://ai.google.dev/gemini-api/docs/music-generation"]]
+    },
+    "search-plan.html": {
+      "status": "检索方法与入口已检查，订阅价格未完成复核",
+      "items": ["搜索套餐的模型范围、深度研究次数与 API 额度应分别核对。Perplexity 官方购买页本次未返回可读取价表，因此不把原有月费和限额改成“今日已核实”。", "查时效信息时优先打开原始来源，区分发布日、事件日和访问日；带引用的回答仍需核对引用是否直接支持结论。"],
+      "sources": [["Perplexity 官方入口", "https://www.perplexity.ai/pro"]]
+    },
+    "learning-plan.html": {
+      "status": "入口改名跳转已检查，教育优惠和限额待复核",
+      "items": ["NotebookLM 原官网本次跳转至 notebook.google（Gemini Notebook）。保留旧产品名便于检索，使用入口以官方跳转为准；教育优惠、地区与账户资格不能仅根据旧套餐表判断。"],
+      "sources": [["官方笔记研究工具入口", "https://notebook.google/"]]
+    },
+    "local-model-plan.html": {
+      "status": "运行时官方入口已核对，排行榜与显存实测待复核",
+      "items": ["Ollama 模型库与 vLLM 文档仍应作为安装、模型支持和部署参数的直接来源。模型名相同不代表不同量化、上下文长度和后端有相同显存需求；旧排名与显存估算仅作原日期参考。"],
+      "sources": [["Ollama 模型库", "https://ollama.com/library"], ["vLLM 文档", "https://docs.vllm.ai/en/latest/"]]
+    },
+    "edge-model-plan.html": {
+      "status": "Google 运行时名称与入口已核对，设备数据待实测",
+      "items": ["Google 官方端侧运行时名称为 LiteRT；生成式语言模型部署另有 LiteRT-LM。项目兼容性应按实际平台、模型格式与加速后端确认，不能把框架名称当作设备性能结论。"],
+      "sources": [["Google LiteRT", "https://developers.google.com/edge/litert"]]
+    },
+    "decision-model-plan.html": {
+      "status": "用途与评估口径已检查，厂商价格和型号待复核",
+      "items": ["分类、路由、评分等决策模型应按真实标签集评估准确率、拒判、延迟与成本。此轮未取得本页全部厂商的当前价表，原型号及价格继续保留原日期，不能当作采购报价。"],
+      "sources": []
+    },
+    "low-filter-api-plan.html": {
+      "status": "Venice 价表入口已核对，其余 API 价格待复核",
+      "items": ["Venice 当前页面区分 Free、Pro、Pro Plus、Max 与 API 用量；展示同时含月付/年付切换，API 另有模型单价。下方旧价格不应直接用于结算估算，需在官网选择账期后确认。", "模型过滤强度是产品行为，不构成违法用途授权；不同提供商仍有各自使用政策和数据条款。"],
+      "sources": [["Venice 当前价表", "https://venice.ai/pricing"]]
+    },
+    "hardware-plan.html": {
+      "status": "硬件官方规格入口已核对，街价与整机配置待复核",
+      "items": ["NVIDIA RTX 50 系列等硬件应以官方规格和所在地购买渠道核对；显存、系统内存、散热和软件支持共同影响本地推理体验。本次没有进行实时电商报价或设备跑分，原街价不是今日报价。"],
+      "sources": [["NVIDIA 官方规格与购买入口", "https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/"]]
+    },
+    "ai-factory-plan.html": {
+      "status": "工作流交付口径已检查，平台价格和收益例子待复核",
+      "items": ["流水线建议先用一个真实任务验证输入、质量、人工复核和失败重试，再放大批量；每次验收保留产物与费用记录。原收益例子和平台额度不作为今日承诺；需要技能时可查看已接入的 Skill 动态。"],
+      "sources": [["Skill 动态公开快照", "skill/index.html"]]
+    },
+    "skill-plan.html": {
+      "status": "官方 Skill 来源和本地动态入口已核对，第三方技能未逐项试用",
+      "items": ["Anthropic 官方 skills 仓库可作为技能结构与示例的直接来源。普通开源项目、MCP 服务与可安装 Skill 是不同资源；被搜索命中或 Stars 高不代表已验证可安装。", "Skill 动态现提供公开快照、全量搜索与排序，并标注源数据日期。采集器的 Skill 标签只代表检索类别，不能视为本网站已完成兼容性或安全认证。"],
+      "sources": [["Anthropic 官方 Skills", "https://github.com/anthropics/skills"], ["Skill 动态", "skill/index.html"]]
+    },
+    "model-finder.html": {
+      "status": "推荐器资料时效已检查，候选库仍为历史快照",
+      "items": ["候选库还没有完整纳入 Sonnet 5.5、Haiku 5.5 和 Gemini 4 Argon。本轮先标明该限制；推荐结果应结合模型专题新增信息判断，不把旧库推荐顺序当作当前能力排名。"],
+      "sources": [["模型专题更新", "model-plan.html"], ["Google 模型目录", "https://ai.google.dev/gemini-api/docs/models"]]
+    }
+  }
+}

@@ -29,13 +29,13 @@
     },
     {
       "title": "Claude",
-      "subtitle": "Opus 5.5 / Fable 5.1，写作、推理与 Claude Code",
+      "subtitle": "Opus / Sonnet / Haiku 5.5，写作、推理与 Claude Code（10/21核对）",
       "link": "https://claude.ai/",
       "avatar": "icon/Claude.png"
     },
     {
       "title": "Gemini",
-      "subtitle": "Gemini 3.8 Flash，多模态、工程 Agent 与 Google 生态",
+      "subtitle": "Gemini 4 Argon / 3.8 Flash，多模态与工程 Agent（10/21核对）",
       "link": "https://gemini.google.com/",
       "avatar": "icon/Google Bard.png"
     },
@@ -47,7 +47,7 @@
     },
     {
       "title": "Cursor",
-      "subtitle": "AI IDE + Agent；多模型用量池含 Grok / Claude / GPT，Tab 无限",
+      "subtitle": "AI IDE + Agent；订阅与第三方模型按量费用分开核对（10/21核对）",
       "link": "https://cursor.com/",
       "avatar": "icon/Cursor.png"
     },

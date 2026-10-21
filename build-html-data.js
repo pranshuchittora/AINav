@@ -2130,8 +2130,8 @@ const html = `<!DOCTYPE html>
     <p>${buildLegalFooterLinks()}</p>
   </footer>
   <div class="lang-float">
-    <a class="lang-btn site-link" href="https://ainews.aiv123.com/" target="_blank" title="AI资讯" style="text-decoration:none;font-size:0.72rem;">资讯</a>
-    <a class="lang-btn site-link" href="https://skill.aiv123.com/" target="_blank" title="AI技能" style="text-decoration:none;font-size:0.72rem;">技能</a>
+    <a class="lang-btn site-link" href="ainews/index.html" title="AI资讯公开快照" style="text-decoration:none;font-size:0.72rem;">资讯</a>
+    <a class="lang-btn site-link" href="skill/index.html" title="AI技能与生态动态" style="text-decoration:none;font-size:0.72rem;">技能</a>
     <a class="lang-btn site-link" href="https://chrome.aiv123.com/" target="_blank" title="Chrome插件" style="text-decoration:none;font-size:0.72rem;">插件</a>
     <button type="button" class="lang-btn" data-lang-set="en">EN</button>
     <button type="button" class="lang-btn" data-lang-set="zh">中</button>

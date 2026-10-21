@@ -82,19 +82,19 @@
   },
   "https://claude.ai/": {
     "freeLevel": "部分免费",
-    "quota": "Claude 网页版免费档因地区/账户而异；API 按量计费",
+    "quota": "官方 Haiku 5.5 页面列明 Free 等计划可选择该模型；具体用量以账号为准，API 另行计费",
     "dailyCycle": "网页免费限额以 Anthropic 当前政策为准",
     "firstBonus": "—",
     "note": "Pro 订阅与 API 为不同产品线",
-    "updated": "2026-04"
+    "updated": "2026-10-21"
   },
   "https://www.anthropic.com/claude": {
     "freeLevel": "部分免费",
-    "quota": "Claude 网页版免费档因地区/账户而异；API 按量计费",
+    "quota": "官方 Haiku 5.5 页面列明 Free 等计划可选择该模型；具体用量以账号为准，API 另行计费",
     "dailyCycle": "网页免费限额以 Anthropic 当前政策为准",
     "firstBonus": "—",
     "note": "Pro 订阅与 API 为不同产品线",
-    "updated": "2026-04"
+    "updated": "2026-10-21"
   },
   "https://gemini.google.com/": {
     "freeLevel": "部分免费",
@@ -146,11 +146,11 @@
   },
   "https://cursor.com/": {
     "freeLevel": "部分免费",
-    "quota": "Hobby 免费档含有限 Agent/补全；Pro 等订阅含用量池",
+    "quota": "Free 免费档含有限 AI 用量；当前付费分 Plus/Premium/Super/Ultra，第三方模型按 API 用量另计",
     "dailyCycle": "免费档限额以 Cursor 当前政策为准",
     "firstBonus": "新用户试用以官网为准",
-    "note": "详见站内 Token 优化与编程套餐横评",
-    "updated": "2026-07"
+    "note": "2026-10-21 核对 cursor.com/pricing；详见编程套餐页本次更新说明",
+    "updated": "2026-10-21"
   },
   "https://chatglm.cn/": {
     "freeLevel": "部分免费",

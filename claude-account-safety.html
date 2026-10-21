@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Claude 账号防封与申诉指南 · AINav</title>
+  <meta name="description" content="Claude 账号合规使用、Claude Code 与 API 凭据边界、限流排查和误封申诉。基于官方来源，区分事实与经验，不承诺零封禁。">
+  <link rel="canonical" href="https://aiv123.com/claude-account-safety.html">
+  <link rel="stylesheet" href="content-viewer.css">
+  <style>
+    .guide-layout{display:grid;grid-template-columns:180px minmax(0,1fr);gap:40px}.guide-toc{position:sticky;top:20px;align-self:start;display:grid;gap:12px;font-size:.9rem}.guide-body{min-width:0}.guide-body section{scroll-margin-top:20px;padding:8px 0 30px}.guide-body h2{font-size:1.5rem;line-height:1.4;margin:20px 0 14px}.guide-body h3{font-size:1.05rem;margin:22px 0 8px}.guide-body p,.guide-body li{max-width:75ch}.guide-body li{margin:9px 0}.guide-body .notice{padding:16px 20px;border-left:4px solid #b87713;background:var(--card)}.guide-table{overflow:auto}.guide-table table{border-collapse:collapse;width:100%;min-width:580px;font-size:.92rem}.guide-table th,.guide-table td{padding:12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}.guide-table th{background:var(--card)}.guide-checks{display:grid;gap:12px}.guide-checks label{display:flex;gap:12px;background:var(--card);padding:14px;align-items:start}.guide-checks input{margin-top:6px;flex-shrink:0;accent-color:var(--accent)}.guide-checks small{display:block;color:var(--muted)}.guide-body details{border-bottom:1px solid var(--line);padding:14px 0}.guide-body summary{cursor:pointer;font-weight:600}.guide-body textarea{width:100%;min-height:320px;resize:vertical;background:var(--card);color:var(--text);border:1px solid var(--line);padding:16px;font:inherit;line-height:1.6;border-radius:8px}.guide-body .source{font-size:.85rem;color:var(--muted)}.cp-nav{display:flex;flex-wrap:wrap;gap:8px 14px;border-bottom:1px solid var(--line);padding-bottom:18px;font-size:.85rem}.cp-nav .is-active{font-weight:700}.cp-nav-sep{display:none}.guide-lead{font-size:1.12rem}.guide-actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:10px}#copy-status{font-size:.9rem;color:var(--muted)}@media(max-width:760px){.guide-layout{grid-template-columns:1fr;gap:10px}.guide-toc{position:static;display:flex;flex-wrap:wrap;gap:8px 15px;border-block:1px solid var(--line);padding:16px 0}.guide-body section{padding-bottom:18px}.cp-nav{max-height:120px;overflow:auto}}
+  </style>
+</head>
+<body><div class="content-wrap">
+  <nav class="cp-nav" data-plan-nav aria-label="AINav 专题导航"><a href="index.html">AINav 首页</a><a href="coding-plan.html">编程套餐</a><a href="token-optimization.html">Token 优化</a></nav>
+  <header><h1>Claude 账号防封与申诉指南</h1><p class="guide-lead">先选对使用方式，再处理账号风险。减少违规与误判风险，为出现问题时留好恢复路径。</p><p>资料核对：<time datetime="2026-10-21">2026-10-21</time>。不存在官方认可的“保证不封”方案；以下区分官方要求、维护建议和未证实传言。</p></header>
+  <div class="guide-layout"><nav class="guide-toc" aria-label="本页目录"><a href="#choose">选择使用方式</a><a href="#checklist">使用前检查</a><a href="#myths">常见防封误区</a><a href="#troubleshoot">错误排查</a><a href="#appeal">申诉与模板</a><a href="#continuity">保存与恢复</a><a href="#sources">官方来源</a></nav><main class="guide-body">
+  <section id="choose"><h2>你的场景，应该用哪种入口？</h2>
+    <div class="guide-table" role="region" aria-label="使用方式对照" tabindex="0"><table><thead><tr><th>场景</th><th>适合的入口</th><th>凭据与边界</th></tr></thead><tbody>
+      <tr><td>个人聊天、写作、分析资料</td><td>Claude 网页或官方应用</td><td>本人账号登录，独享使用；订阅可用功能以账号页面为准。</td></tr>
+      <tr><td>本人使用 Claude Code</td><td>官方、未修改的 Claude Code</td><td>走官方登录流程使用合适订阅，或配置 API / 支持的云服务商凭据。</td></tr>
+      <tr><td>第三方客户端、自建产品、服务与 Agent SDK 集成</td><td>Claude API 或支持的云服务商</td><td>开发者使用 API key；不要收集或中转用户的 Claude 会话 token。</td></tr>
+      <tr><td>多人协作</td><td>按需选择 Team / Enterprise 独立成员席位</td><td>按组织规则授权成员，避免多人共用一个个人账号。</td></tr>
+    </tbody></table></div>
+    <p>平台原样托管官方 Claude Code、由用户在官方流程中登录，有明确的文档条件；这与提取订阅 token 后冒充客户端调用不同。不能把所有脚本、插件和托管环境一概判为违规。</p>
+    <p class="source">依据：<a href="https://code.claude.com/docs/en/legal-and-compliance#authentication-and-credential-use">Claude Code 的认证和凭据说明</a>、<a href="https://www.anthropic.com/legal/consumer-terms">消费者条款</a>。订阅和 API 的额度、账单与优惠按具体产品说明核对。</p>
+  </section>
+  <section id="checklist"><h2>使用前检查清单</h2><p>勾选仅帮助自查，不计算“安全分数”，也不代表平台审核结果。</p>
+    <div class="guide-checks">
+      <label><input type="checkbox"><span>核实真实使用地区与资格<small>官方要求：遵守适用地区政策；能打开网页或换了出口 IP，不等于具备使用资格。</small></span></label>
+      <label><input type="checkbox"><span>本人使用，账号资料准确<small>官方要求：不共享个人账户和登录凭据。成品号、租号和多人合用无法提供账号独享的保障。</small></span></label>
+      <label><input type="checkbox"><span>官方登录，开发接入选对凭据<small>官方要求：第三方应用不得收集、中转 Claude 登录凭据或会话 token；开发服务按文档选择 API。</small></span></label>
+      <label><input type="checkbox"><span>保护邮箱、设备与 API key<small>维护建议：使用独立密码和可用的多因素验证，移除不可信插件；不把 token、Cookie、密钥贴给所谓解封客服。</small></span></label>
+      <label><input type="checkbox"><span>遵守使用政策和用量限制<small>官方要求与维护建议：阅读政策；发生限流时等待并退避重试，避免重试风暴。</small></span></label>
+      <label><input type="checkbox"><span>账单和重要资料留有本人副本<small>维护建议：保留必要订单号、错误信息和工作文件，便于支持核查与工作恢复。</small></span></label>
+    </div>
+    <p class="notice">地区政策版本提醒：本次访问的 <a href="https://www.anthropic.com/legal/supported-regions">Supported Regions Policy</a> 显示生效日期为 <strong>2026-11-12</strong>，晚于本页核对日期。请另行核对当期适用版本；这里不把未来版本列为已经生效的规则。</p>
+  </section>
+  <section id="myths"><h2>常见“防封方案”，哪些有依据？</h2>
+    <details><summary>住宅 IP、固定节点、指纹浏览器能保证不封？</summary><p>未发现官方保证。网络正常有助于登录排障，但不改变地区资格、凭据使用和内容政策。仅凭 IP 类型无法推算封禁概率。</p></details>
+    <details><summary>新号先养几天、每天只聊固定条数？</summary><p>没有可引用的官方“养号天数”或安全对话数量。按产品显示的实际限制使用，不把社区个案当作因果规律。</p></details>
+    <details><summary>买 Pro / Max，就不会封号？</summary><p>付费服务同样适用条款与使用政策。订阅解决功能和额度需求，不能购买违规豁免。</p></details>
+    <details><summary>共享账号或订阅 token 中转，比官方 API 更稳？</summary><p>消费者条款限制共享个人账户，认证文档限制第三方收集、中转 Claude 凭据。应先选合适的官方接入方式，不能把低价或“稳定”宣传当成授权依据。</p></details>
+    <details><summary>看到报错就说明账号被封？</summary><p>额度耗尽、API 限流和服务故障都有可能出现错误。先看错误原文与状态页，再决定等待、检查账单还是申诉。</p></details>
+  </section>
+  <section id="troubleshoot"><h2>出现问题，先分清是哪一种</h2>
+    <div class="guide-table" role="region" aria-label="错误排查对照" tabindex="0"><table><thead><tr><th>现象</th><th>先检查</th><th>下一步</th></tr></thead><tbody>
+      <tr><td>达到用量上限、显示重置时间</td><td>账号用量页面与当前套餐</td><td>按提示等待；是否购买额外额度由需求决定。</td></tr>
+      <tr><td>API 返回 429</td><td>具体错误体、限制类型、retry-after</td><td>按响应头等待，降低并发并退避；429 本身不等于封禁。</td></tr>
+      <tr><td>登录错误、5xx、服务不可用</td><td><a href="https://status.claude.com/">官方状态页</a></td><td>故障期间稍后重试；持续异常则带错误原文联系支持。</td></tr>
+      <tr><td>明确显示账号 suspended / disabled</td><td>登录后的通知、邮件和原因</td><td>使用本人被封账号进入官方申诉流程。</td></tr>
+      <tr><td>本人账号正常，组织 on hold</td><td>账号页列出的受影响组织</td><td>点击该组织的 Request a review，请求复核。</td></tr>
+    </tbody></table></div>
+    <p class="source">依据：<a href="https://support.claude.com/en/articles/8243635-our-approach-to-rate-limits-for-the-claude-api">API 速率限制</a>、<a href="https://support.claude.com/en/articles/12466728-troubleshoot-claude-error-messages">错误消息排查</a>、<a href="https://support.claude.com/en/articles/8241253-safeguards-warnings-and-appeals">警告和申诉</a>。</p>
+  </section>
+  <section id="appeal"><h2>认为误封时，按事实申诉</h2><ol><li>保留错误原文、出现时间和时区，以及本人账号标识。</li><li>登录被封账号，从<a href="https://support.claude.com/en/articles/8241253-safeguards-warnings-and-appeals">官方帮助文章</a>进入申诉表；表单要求已登录。</li><li>准确描述真实地区、所用产品和登录方式，说明你认为误判的原因。遇到表单打不开的情况，保留截图，通过帮助中心的支持入口反馈。</li><li>保存提交记录和工单号，按官方要求补充信息。恢复结果与处理时长以官方回复为准。</li></ol>
+    <label for="appeal-template"><strong>英文申诉模板：请替换方括号，仅填写真实信息</strong></label>
+    <textarea id="appeal-template" spellcheck="false">Subject: Request to review my Claude account restriction
+
+Hello Safeguards team,
+
+Please review the restriction on my account [account email].
+I first saw it at [date, time, and time zone].
+The exact message was: [copy the error text].
+I was physically located in [country/region].
+I was using [Claude web / official app / Claude Code / API] via [describe the actual sign-in or API method].
+My recent activity was [brief factual description].
+I believe the restriction may be a mistake because [specific facts].
+
+Please let me know if you need further information to investigate.
+Reference or ticket number, if any: [number].
+Thank you.</textarea>
+    <div class="guide-actions"><button id="copy-appeal" type="button">复制申诉模板</button><span id="copy-status" role="status" aria-live="polite"></span></div><p class="source">无需在模板里填写密码、Cookie、token、API key 或完整银行卡信息；在官方渠道按要求提供必要资料。</p>
+  </section>
+  <section id="continuity"><h2>让账号问题不至于中断工作</h2><ul><li>重要代码、文档、提示词和工作结论保留在自己可控的位置。</li><li>按需要使用官方导出功能。封禁后的可导出范围可能受限制，以账号页面为准。</li><li>准备自己有资格使用的替代工具，保留任务输入和验收标准，降低迁移成本。</li><li>凭据疑似泄露时，先处理邮箱和设备安全，通过官方支持确认恢复路径。</li></ul><p>这些是工作连续性的维护建议，并非平台公布的防封规则。可继续阅读<a href="coding-plan.html">编程套餐</a>和<a href="token-optimization.html">Token 优化</a>。</p></section>
+  <section id="sources"><h2>官方来源与维护记录</h2><ul><li><a href="https://www.anthropic.com/legal/consumer-terms">消费者条款</a>：本次页面标注生效日 2025-10-08。</li><li><a href="https://code.claude.com/docs/en/legal-and-compliance">Claude Code 法律与合规</a>：原生应用、托管条件和凭据边界。</li><li><a href="https://www.anthropic.com/legal/supported-regions">支持地区政策</a>：本次页面标注 2026-11-12，属于未来生效版本，需核对当期版本。</li><li><a href="https://www.anthropic.com/legal/aup">使用政策</a>：具体允许和禁止的用途以官方为准。</li><li><a href="https://support.claude.com/en/articles/8241253-safeguards-warnings-and-appeals">警告、申诉、组织暂停与数据导出</a>。</li><li><a href="https://support.claude.com/en/articles/8243635-our-approach-to-rate-limits-for-the-claude-api">API 速率限制</a>、<a href="https://status.claude.com/">实时服务状态</a>。</li></ul><p>2026-10-21：建立本专题，核对上述来源，未采信社区个案中的保号概率与固定阈值。官方网页会继续变化，操作前请再次查看原文。</p></section>
+  </main></div><footer><a href="index.html">AINav 首页</a> · <a href="ainews/">AI 资讯</a> · <a href="skill/">Skill 动态</a></footer>
+</div><script src="plan-nav.js" data-active="claude-account-safety.html" data-lang="false"></script><script>
+document.getElementById('copy-appeal').addEventListener('click', async function () {
+  var field = document.getElementById('appeal-template'), status = document.getElementById('copy-status');
+  try { await navigator.clipboard.writeText(field.value); status.textContent = '已复制，请替换模板中的方括号。'; }
+  catch (_) { field.focus(); field.select(); status.textContent = '已选中模板，请按 Ctrl+C 或使用设备的复制菜单。'; }
+});
+</script></body></html>

@@ -31,6 +31,36 @@
       "homeTitle": "Cursor / Claude Code / Codex Token 优化安装配置与最佳实践",
       "homeI18n": "tokenOptimize"
     },
+    {
+      "href": "claude-account-safety.html",
+      "zh": "Claude账号指南",
+      "en": "Claude Account Safety",
+      "match": ["claude-account-safety.html"],
+      "nav": ["sub", "plan", "home"],
+      "homeGroup": "tools",
+      "planGroup": "tools",
+      "homeTitle": "Claude合规使用、账号风险排查与误封申诉"
+    },
+    {
+      "href": "ainews/index.html",
+      "zh": "AI资讯",
+      "en": "AI News",
+      "match": ["ainews/index.html"],
+      "nav": ["sub", "plan", "home"],
+      "homeGroup": "tools",
+      "planGroup": "tools",
+      "homeTitle": "AI资讯公开快照、日报与周报摘要"
+    },
+    {
+      "href": "skill/index.html",
+      "zh": "Skill动态",
+      "en": "Skill Monitor",
+      "match": ["skill/index.html"],
+      "nav": ["sub", "plan", "home"],
+      "homeGroup": "tools",
+      "planGroup": "tools",
+      "homeTitle": "AI开源项目、Skill相关项目与生态动态"
+    },
     { "type": "sep", "nav": ["sub"] },
     {
       "href": "model-finder.html",
@@ -258,6 +288,9 @@
     }
   ],
   "sitemap": [
+    { "loc": "https://aiv123.com/claude-account-safety.html", "changefreq": "monthly", "priority": "0.8" },
+    { "loc": "https://aiv123.com/ainews/index.html", "changefreq": "daily", "priority": "0.75" },
+    { "loc": "https://aiv123.com/skill/index.html", "changefreq": "daily", "priority": "0.75" },
     { "loc": "https://aiv123.com/", "changefreq": "weekly", "priority": "1.0" },
     { "loc": "https://aiv123.com/free-tier.html", "changefreq": "weekly", "priority": "0.85" },
     { "loc": "https://aiv123.com/ai-encyclopedia-2026.html", "changefreq": "weekly", "priority": "0.8" },

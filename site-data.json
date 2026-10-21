@@ -44,7 +44,7 @@
         {
           "key": "daily-4",
           "title": "Claude",
-          "subtitle": "Opus 5.5 / Fable 5.1，写作、推理与 Claude Code",
+          "subtitle": "Opus / Sonnet / Haiku 5.5，写作、推理与 Claude Code（10/21核对）",
           "avatar": "icon/Claude.png",
           "link": "https://claude.ai/",
           "path": "",
@@ -53,7 +53,7 @@
         {
           "key": "daily-5",
           "title": "Gemini",
-          "subtitle": "Gemini 3.8 Flash，多模态、工程 Agent 与 Google 生态",
+          "subtitle": "Gemini 4 Argon / 3.8 Flash，多模态与工程 Agent（10/21核对）",
           "avatar": "icon/Google Bard.png",
           "link": "https://gemini.google.com/",
           "path": "",
@@ -71,7 +71,7 @@
         {
           "key": "daily-7",
           "title": "Cursor",
-          "subtitle": "AI IDE + Agent；多模型用量池含 Grok / Claude / GPT，Tab 无限",
+          "subtitle": "AI IDE + Agent；订阅与第三方模型按量费用分开核对（10/21核对）",
           "avatar": "icon/Cursor.png",
           "link": "https://cursor.com/",
           "path": "",
@@ -8936,7 +8936,7 @@
           "title": "Skill Monitor（AINav）",
           "subtitle": "GitHub AI 项目动态监控：Trending / HuggingFace / HackerNews 多源聚合",
           "avatar": "",
-          "link": "https://skill.aiv123.com/",
+          "link": "https://aiv123.com/skill/",
           "path": "",
           "added": ""
         },
@@ -13885,5 +13885,5 @@
     }
   },
   "builtFrom": "local",
-  "generatedAt": "2026-09-23T11:44:17.730Z"
+  "generatedAt": "2026-10-21T07:14:38.938Z"
 }
